@@ -1,0 +1,5474 @@
+[
+    {
+        "name": "กรุงเทพอภิวัฒน์",
+        "en_name": "Bangkok (Krung Thep Aphiwat)",
+        "class": "11",
+        "id": "1000",
+        "t_flag": "1",
+        "km": "7.833"
+    },
+    {
+        "name": "กรุงเทพ (หัวลำโพง)",
+        "en_name": "Bangkok (Hua Lamphong)",
+        "class": "1",
+        "id": "1001",
+        "t_flag": "1",
+        "km": ".000"
+    },
+    {
+        "name": "ธนบุรี",
+        "en_name": "Thon Buri",
+        "class": "1",
+        "id": "4002",
+        "t_flag": "1",
+        "km": ".870"
+    },
+    {
+        "name": "ชุมทางบางซื่อ",
+        "en_name": "Bang Sue Junction",
+        "class": "1",
+        "id": "1007",
+        "t_flag": "0",
+        "km": "7.470"
+    },
+    {
+        "name": "ดอนเมือง",
+        "en_name": "Don Mueang",
+        "class": "1",
+        "id": "1017",
+        "t_flag": "0",
+        "km": "22.210"
+    },
+    {
+        "name": "รังสิต",
+        "en_name": "Rangsit",
+        "class": "1",
+        "id": "1021",
+        "t_flag": "0",
+        "km": "29.750"
+    },
+    {
+        "name": "มหาชัย",
+        "en_name": "Maha Chai",
+        "class": "1",
+        "id": "5018",
+        "t_flag": "0",
+        "km": "31.220"
+    },
+    {
+        "name": "นครปฐม",
+        "en_name": "Nakhon Pathom",
+        "class": "1",
+        "id": "4016",
+        "t_flag": "0",
+        "km": "48.270"
+    },
+    {
+        "name": "ชุมทางฉะเชิงเทรา",
+        "en_name": "Chachoengsao Junction",
+        "class": "1",
+        "id": "3023",
+        "t_flag": "0",
+        "km": "61.000"
+    },
+    {
+        "name": "อยุธยา",
+        "en_name": "Ayutthaya",
+        "class": "1",
+        "id": "1031",
+        "t_flag": "0",
+        "km": "71.070"
+    },
+    {
+        "name": "ชุมทางบ้านภาชี",
+        "en_name": "Ban Phachi Junction",
+        "class": "1",
+        "id": "1036",
+        "t_flag": "0",
+        "km": "89.950"
+    },
+    {
+        "name": "ราชบุรี",
+        "en_name": "Ratchaburi",
+        "class": "1",
+        "id": "4089",
+        "t_flag": "0",
+        "km": "101.316"
+    },
+    {
+        "name": "ชลบุรี",
+        "en_name": "Chon Buri",
+        "class": "1",
+        "id": "3032",
+        "t_flag": "0",
+        "km": "107.790"
+    },
+    {
+        "name": "สระบุรี",
+        "en_name": "Saraburi",
+        "class": "1",
+        "id": "2007",
+        "t_flag": "0",
+        "km": "113.260"
+    },
+    {
+        "name": "ปราจีนบุรี",
+        "en_name": "Prachin Buri",
+        "class": "1",
+        "id": "3066",
+        "t_flag": "0",
+        "km": "121.780"
+    },
+    {
+        "name": "ชุมทางแก่งคอย",
+        "en_name": "Kaeng Khoi Junction",
+        "class": "1",
+        "id": "2011",
+        "t_flag": "0",
+        "km": "125.100"
+    },
+    {
+        "name": "ลพบุรี",
+        "en_name": "Lop Buri",
+        "class": "1",
+        "id": "1050",
+        "t_flag": "0",
+        "km": "132.810"
+    },
+    {
+        "name": "ลพบุรี 2 (ท่าวุ้ง)",
+        "en_name": "Lop Buri 2 (Tha Wung)",
+        "class": "1",
+        "id": "1049",
+        "t_flag": "0",
+        "km": "137.681"
+    },
+    {
+        "name": "เพชรบุรี",
+        "en_name": "Phetchaburi",
+        "class": "1",
+        "id": "4101",
+        "t_flag": "0",
+        "km": "150.500"
+    },
+    {
+        "name": "ปากช่อง",
+        "en_name": "Pak Chong",
+        "class": "1",
+        "id": "2093",
+        "t_flag": "0",
+        "km": "179.930"
+    },
+    {
+        "name": "หัวหิน",
+        "en_name": "Hua Hin",
+        "class": "1",
+        "id": "4118",
+        "t_flag": "0",
+        "km": "213.110"
+    },
+    {
+        "name": "นครสวรรค์",
+        "en_name": "Nakhon Sawan",
+        "class": "1",
+        "id": "1082",
+        "t_flag": "0",
+        "km": "245.780"
+    },
+    {
+        "name": "นครราชสีมา",
+        "en_name": "Nakhon Ratchasima",
+        "class": "1",
+        "id": "2114",
+        "t_flag": "0",
+        "km": "263.650"
+    },
+    {
+        "name": "ชุมทางถนนจิระ",
+        "en_name": "Thanon Chira Junction",
+        "class": "1",
+        "id": "2115",
+        "t_flag": "0",
+        "km": "266.280"
+    },
+    {
+        "name": "ประจวบคีรีขันธ์",
+        "en_name": "Prachuap Khiri Khan",
+        "class": "1",
+        "id": "4142",
+        "t_flag": "0",
+        "km": "302.075"
+    },
+    {
+        "name": "ชุมทางบัวใหญ่",
+        "en_name": "Bua Yai Junction",
+        "class": "1",
+        "id": "2136",
+        "t_flag": "0",
+        "km": "345.500"
+    },
+    {
+        "name": "พิจิตร",
+        "en_name": "Phichit",
+        "class": "1",
+        "id": "1107",
+        "t_flag": "0",
+        "km": "346.790"
+    },
+    {
+        "name": "บุรีรัมย์",
+        "en_name": "Buri Ram",
+        "class": "1",
+        "id": "2236",
+        "t_flag": "0",
+        "km": "376.020"
+    },
+    {
+        "name": "พิษณุโลก",
+        "en_name": "Phitsanulok",
+        "class": "1",
+        "id": "1118",
+        "t_flag": "0",
+        "km": "389.280"
+    },
+    {
+        "name": "สุรินทร์",
+        "en_name": "Surin",
+        "class": "1",
+        "id": "2248",
+        "t_flag": "0",
+        "km": "419.750"
+    },
+    {
+        "name": "ขอนแก่น",
+        "en_name": "Khon Kaen",
+        "class": "1",
+        "id": "2163",
+        "t_flag": "0",
+        "km": "449.750"
+    },
+    {
+        "name": "ชุมพร",
+        "en_name": "Chumphon",
+        "class": "1",
+        "id": "4186",
+        "t_flag": "0",
+        "km": "467.800"
+    },
+    {
+        "name": "อุตรดิตถ์",
+        "en_name": "Uttaradit",
+        "class": "1",
+        "id": "1150",
+        "t_flag": "0",
+        "km": "485.170"
+    },
+    {
+        "name": "ศิลาอาสน์",
+        "en_name": "Sila At",
+        "class": "1",
+        "id": "1151",
+        "t_flag": "0",
+        "km": "487.520"
+    },
+    {
+        "name": "ศรีสะเกษ",
+        "en_name": "Si Sa Ket",
+        "class": "1",
+        "id": "2273",
+        "t_flag": "0",
+        "km": "515.090"
+    },
+    {
+        "name": "เด่นชัย",
+        "en_name": "Den Chai",
+        "class": "1",
+        "id": "1164",
+        "t_flag": "0",
+        "km": "533.940"
+    },
+    {
+        "name": "อุดรธานี",
+        "en_name": "Udon Thani",
+        "class": "1",
+        "id": "2195",
+        "t_flag": "0",
+        "km": "568.840"
+    },
+    {
+        "name": "อุบลราชธานี",
+        "en_name": "Ubon Ratchathani",
+        "class": "1",
+        "id": "2290",
+        "t_flag": "0",
+        "km": "575.100"
+    },
+    {
+        "name": "หนองคาย",
+        "en_name": "Nong Khai",
+        "class": "1",
+        "id": "2209",
+        "t_flag": "0",
+        "km": "621.100"
+    },
+    {
+        "name": "สุราษฎร์ธานี",
+        "en_name": "Surat Thani",
+        "class": "1",
+        "id": "4239",
+        "t_flag": "0",
+        "km": "635.020"
+    },
+    {
+        "name": "นครลำปาง",
+        "en_name": "Nakhon Lampang",
+        "class": "1",
+        "id": "1193",
+        "t_flag": "0",
+        "km": "642.290"
+    },
+    {
+        "name": "เชียงใหม่",
+        "en_name": "Chiang Mai",
+        "class": "1",
+        "id": "1222",
+        "t_flag": "0",
+        "km": "751.420"
+    },
+    {
+        "name": "ชุมทางทุ่งสง",
+        "en_name": "Thung Song Junction",
+        "class": "1",
+        "id": "4270",
+        "t_flag": "0",
+        "km": "757.080"
+    },
+    {
+        "name": "ชุมทางหาดใหญ่",
+        "en_name": "Hat Yai Junction",
+        "class": "1",
+        "id": "4347",
+        "t_flag": "0",
+        "km": "928.580"
+    },
+    {
+        "name": "ปัตตานี",
+        "en_name": "Pattani",
+        "class": "1",
+        "id": "4395",
+        "t_flag": "0",
+        "km": "1009.210"
+    },
+    {
+        "name": "ยะลา",
+        "en_name": "Yala",
+        "class": "1",
+        "id": "4402",
+        "t_flag": "0",
+        "km": "1038.740"
+    },
+    {
+        "name": "สุไหงโก-ลก",
+        "en_name": "Su-Ngai Kolok",
+        "class": "1",
+        "id": "4432",
+        "t_flag": "0",
+        "km": "1142.990"
+    },
+    {
+        "name": "วงเวียนใหญ่",
+        "en_name": "Wongwian Yai",
+        "class": "2",
+        "id": "5001",
+        "t_flag": "0",
+        "km": ".000"
+    },
+    {
+        "name": "มักกะสัน",
+        "en_name": "Makkasan",
+        "class": "2",
+        "id": "3001",
+        "t_flag": "0",
+        "km": "5.170"
+    },
+    {
+        "name": "ชุมทางตลิ่งชัน",
+        "en_name": "Taling Chan Junction",
+        "class": "2",
+        "id": "4004",
+        "t_flag": "0",
+        "km": "6.080"
+    },
+    {
+        "name": "คลองตัน",
+        "en_name": "Khlong Tan",
+        "class": "2",
+        "id": "3009",
+        "t_flag": "0",
+        "km": "9.850"
+    },
+    {
+        "name": "หัวหมาก",
+        "en_name": "Hua Mak",
+        "class": "2",
+        "id": "3010",
+        "t_flag": "0",
+        "km": "15.410"
+    },
+    {
+        "name": "ศาลายา",
+        "en_name": "Sala Ya",
+        "class": "2",
+        "id": "4009",
+        "t_flag": "0",
+        "km": "19.060"
+    },
+    {
+        "name": "หัวตะเข้",
+        "en_name": "Hua Takhe",
+        "class": "2",
+        "id": "3015",
+        "t_flag": "0",
+        "km": "30.870"
+    },
+    {
+        "name": "บางปะอิน",
+        "en_name": "Bang Pa-in",
+        "class": "2",
+        "id": "1028",
+        "t_flag": "0",
+        "km": "58.000"
+    },
+    {
+        "name": "ชุมทางหนองปลาดุก",
+        "en_name": "Nong Pla Duk Junction",
+        "class": "2",
+        "id": "4020",
+        "t_flag": "0",
+        "km": "64.246"
+    },
+    {
+        "name": "บ้านโป่ง",
+        "en_name": "Ban Pong",
+        "class": "2",
+        "id": "4079",
+        "t_flag": "0",
+        "km": "68.364"
+    },
+    {
+        "name": "โพธาราม",
+        "en_name": "Photharam",
+        "class": "2",
+        "id": "4083",
+        "t_flag": "0",
+        "km": "81.846"
+    },
+    {
+        "name": "บ้านสร้าง",
+        "en_name": "Ban Sang",
+        "class": "2",
+        "id": "3061",
+        "t_flag": "0",
+        "km": "101.510"
+    },
+    {
+        "name": "ท่าเรือ",
+        "en_name": "Tha Rua",
+        "class": "2",
+        "id": "1039",
+        "t_flag": "0",
+        "km": "102.730"
+    },
+    {
+        "name": "บ้านหมอ",
+        "en_name": "Ban Mo",
+        "class": "2",
+        "id": "1041",
+        "t_flag": "0",
+        "km": "108.780"
+    },
+    {
+        "name": "กาญจนบุรี",
+        "en_name": "Kanchanaburi",
+        "class": "2",
+        "id": "4057",
+        "t_flag": "0",
+        "km": "117.040"
+    },
+    {
+        "name": "ชุมทางศรีราชา",
+        "en_name": "Si Racha Junction",
+        "class": "2",
+        "id": "3036",
+        "t_flag": "0",
+        "km": "130.600"
+    },
+    {
+        "name": "บางละมุง",
+        "en_name": "Bang Lamung",
+        "class": "2",
+        "id": "3039",
+        "t_flag": "0",
+        "km": "144.090"
+    },
+    {
+        "name": "หินลับ",
+        "en_name": "Hin Lap",
+        "class": "2",
+        "id": "2084",
+        "t_flag": "0",
+        "km": "144.290"
+    },
+    {
+        "name": "มวกเหล็กใหม่",
+        "en_name": "Muak Lek 2",
+        "class": "2",
+        "id": "2087",
+        "t_flag": "0",
+        "km": "147.450"
+    },
+    {
+        "name": "มวกเหล็ก",
+        "en_name": "Muak Lek",
+        "class": "2",
+        "id": "2086",
+        "t_flag": "0",
+        "km": "152.300"
+    },
+    {
+        "name": "พัทยา",
+        "en_name": "Pattaya",
+        "class": "2",
+        "id": "3041",
+        "t_flag": "0",
+        "km": "155.140"
+    },
+    {
+        "name": "บ้านหมี่",
+        "en_name": "Ban Mi",
+        "class": "2",
+        "id": "1058",
+        "t_flag": "0",
+        "km": "161.220"
+    },
+    {
+        "name": "กบินทร์บุรี",
+        "en_name": "Kabin Buri",
+        "class": "2",
+        "id": "3075",
+        "t_flag": "0",
+        "km": "161.260"
+    },
+    {
+        "name": "ชะอำ",
+        "en_name": "Cha-am",
+        "class": "2",
+        "id": "4111",
+        "t_flag": "0",
+        "km": "187.066"
+    },
+    {
+        "name": "บ้านตาคลี",
+        "en_name": "Ban Takhli",
+        "class": "2",
+        "id": "1067",
+        "t_flag": "0",
+        "km": "193.010"
+    },
+    {
+        "name": "สีคิ้ว",
+        "en_name": "Sikhiu",
+        "class": "2",
+        "id": "2105",
+        "t_flag": "0",
+        "km": "223.790"
+    },
+    {
+        "name": "ปากน้ำโพ",
+        "en_name": "Pak Nam Pho",
+        "class": "2",
+        "id": "1083",
+        "t_flag": "0",
+        "km": "250.560"
+    },
+    {
+        "name": "อรัญประเทศ",
+        "en_name": "Aranyaprathet",
+        "class": "2",
+        "id": "3100",
+        "t_flag": "0",
+        "km": "254.500"
+    },
+    {
+        "name": "ชุมแสง",
+        "en_name": "Chumsaeng",
+        "class": "2",
+        "id": "1088",
+        "t_flag": "0",
+        "km": "280.290"
+    },
+    {
+        "name": "บำเหน็จณรงค์",
+        "en_name": "Bamnet Narong",
+        "class": "2",
+        "id": "2057",
+        "t_flag": "0",
+        "km": "290.530"
+    },
+    {
+        "name": "บางมูลนาก",
+        "en_name": "Bang Mun Nak",
+        "class": "2",
+        "id": "1093",
+        "t_flag": "0",
+        "km": "297.030"
+    },
+    {
+        "name": "จักราช",
+        "en_name": "Chakkarat",
+        "class": "2",
+        "id": "2217",
+        "t_flag": "0",
+        "km": "300.150"
+    },
+    {
+        "name": "จัตุรัส",
+        "en_name": "Chatturat",
+        "class": "2",
+        "id": "2062",
+        "t_flag": "0",
+        "km": "310.190"
+    },
+    {
+        "name": "ตะพานหิน",
+        "en_name": "Taphan Hin",
+        "class": "2",
+        "id": "1099",
+        "t_flag": "0",
+        "km": "319.000"
+    },
+    {
+        "name": "ห้วยแถลง",
+        "en_name": "Huai Thalaeng",
+        "class": "2",
+        "id": "2224",
+        "t_flag": "0",
+        "km": "325.650"
+    },
+    {
+        "name": "ทับสะแก",
+        "en_name": "Thap Sakae",
+        "class": "2",
+        "id": "4153",
+        "t_flag": "0",
+        "km": "342.025"
+    },
+    {
+        "name": "ลำปลายมาศ",
+        "en_name": "Lam Plai Mat",
+        "class": "2",
+        "id": "2229",
+        "t_flag": "0",
+        "km": "345.700"
+    },
+    {
+        "name": "บางกระทุ่ม",
+        "en_name": "Bang Krathum",
+        "class": "2",
+        "id": "1111",
+        "t_flag": "0",
+        "km": "362.250"
+    },
+    {
+        "name": "บางสะพานใหญ่",
+        "en_name": "Bang Saphan Yai",
+        "class": "2",
+        "id": "4163",
+        "t_flag": "0",
+        "km": "376.525"
+    },
+    {
+        "name": "เมืองพล",
+        "en_name": "Muang Phon",
+        "class": "2",
+        "id": "2144",
+        "t_flag": "0",
+        "km": "377.660"
+    },
+    {
+        "name": "บึงพระ",
+        "en_name": "Bung Phra",
+        "class": "2",
+        "id": "1116",
+        "t_flag": "0",
+        "km": "381.870"
+    },
+    {
+        "name": "ห้วยราช",
+        "en_name": "Huai Rat",
+        "class": "2",
+        "id": "2239",
+        "t_flag": "0",
+        "km": "385.510"
+    },
+    {
+        "name": "บางสะพานน้อย",
+        "en_name": "Bang Saphan Noi",
+        "class": "2",
+        "id": "4167",
+        "t_flag": "0",
+        "km": "392.618"
+    },
+    {
+        "name": "กระสัง",
+        "en_name": "Krasang",
+        "class": "2",
+        "id": "2243",
+        "t_flag": "0",
+        "km": "398.650"
+    },
+    {
+        "name": "บ้านไผ่",
+        "en_name": "Ban Phai",
+        "class": "2",
+        "id": "2152",
+        "t_flag": "0",
+        "km": "407.720"
+    },
+    {
+        "name": "ปะทิว",
+        "en_name": "Pathiu",
+        "class": "2",
+        "id": "4179",
+        "t_flag": "0",
+        "km": "439.000"
+    },
+    {
+        "name": "ศีขรภูมิ",
+        "en_name": "Sikhoraphum",
+        "class": "2",
+        "id": "2256",
+        "t_flag": "0",
+        "km": "452.390"
+    },
+    {
+        "name": "สำโรงทาบ",
+        "en_name": "Samrong Thap",
+        "class": "2",
+        "id": "2261",
+        "t_flag": "0",
+        "km": "471.000"
+    },
+    {
+        "name": "น้ำพอง",
+        "en_name": "Nam Phong",
+        "class": "2",
+        "id": "2172",
+        "t_flag": "0",
+        "km": "484.210"
+    },
+    {
+        "name": "อุทุมพรพิสัย",
+        "en_name": "Uthumphon Phisai",
+        "class": "2",
+        "id": "2267",
+        "t_flag": "0",
+        "km": "494.450"
+    },
+    {
+        "name": "สวี",
+        "en_name": "Sawi",
+        "class": "2",
+        "id": "4194",
+        "t_flag": "0",
+        "km": "500.760"
+    },
+    {
+        "name": "กุมภวาปี",
+        "en_name": "Kumphawapi",
+        "class": "2",
+        "id": "2186",
+        "t_flag": "0",
+        "km": "532.500"
+    },
+    {
+        "name": "หลังสวน",
+        "en_name": "Lang Suan",
+        "class": "2",
+        "id": "4203",
+        "t_flag": "0",
+        "km": "533.300"
+    },
+    {
+        "name": "กันทรารมย์",
+        "en_name": "Kanthararom",
+        "class": "2",
+        "id": "2281",
+        "t_flag": "0",
+        "km": "542.180"
+    },
+    {
+        "name": "บ้านปิน",
+        "en_name": "Ban Pin",
+        "class": "2",
+        "id": "1172",
+        "t_flag": "0",
+        "km": "563.860"
+    },
+    {
+        "name": "ท่าชนะ",
+        "en_name": "Tha Chana",
+        "class": "2",
+        "id": "4215",
+        "t_flag": "0",
+        "km": "577.780"
+    },
+    {
+        "name": "ไชยา",
+        "en_name": "Chaiya",
+        "class": "2",
+        "id": "4221",
+        "t_flag": "0",
+        "km": "597.710"
+    },
+    {
+        "name": "บ้านนา",
+        "en_name": "Ban Na",
+        "class": "2",
+        "id": "4247",
+        "t_flag": "0",
+        "km": "662.340"
+    },
+    {
+        "name": "นาสาร",
+        "en_name": "Na San",
+        "class": "2",
+        "id": "4250",
+        "t_flag": "0",
+        "km": "673.700"
+    },
+    {
+        "name": "บ้านส้อง",
+        "en_name": "Ban Song",
+        "class": "2",
+        "id": "4255",
+        "t_flag": "0",
+        "km": "692.730"
+    },
+    {
+        "name": "ลำพูน",
+        "en_name": "Lamphun",
+        "class": "2",
+        "id": "1216",
+        "t_flag": "0",
+        "km": "729.210"
+    },
+    {
+        "name": "ร่อนพิบูลย์",
+        "en_name": "Ron Phibun",
+        "class": "2",
+        "id": "4299",
+        "t_flag": "0",
+        "km": "776.330"
+    },
+    {
+        "name": "ห้วยยอด",
+        "en_name": "Huai Yot",
+        "class": "2",
+        "id": "4281",
+        "t_flag": "0",
+        "km": "800.820"
+    },
+    {
+        "name": "ชะอวด",
+        "en_name": "Cha-uat",
+        "class": "2",
+        "id": "4315",
+        "t_flag": "0",
+        "km": "806.060"
+    },
+    {
+        "name": "นครศรีธรรมราช",
+        "en_name": "Nakhon Si Thammarat",
+        "class": "2",
+        "id": "4308",
+        "t_flag": "0",
+        "km": "816.020"
+    },
+    {
+        "name": "ตรัง",
+        "en_name": "Trang",
+        "class": "2",
+        "id": "4289",
+        "t_flag": "0",
+        "km": "829.280"
+    },
+    {
+        "name": "พัทลุง",
+        "en_name": "Phatthalung",
+        "class": "2",
+        "id": "4325",
+        "t_flag": "0",
+        "km": "846.010"
+    },
+    {
+        "name": "จะนะ",
+        "en_name": "Chana",
+        "class": "2",
+        "id": "4384",
+        "t_flag": "0",
+        "km": "964.500"
+    },
+    {
+        "name": "ปาดังเบซาร์",
+        "en_name": "Padang Besar",
+        "class": "2",
+        "id": "4374",
+        "t_flag": "0",
+        "km": "989.890"
+    },
+    {
+        "name": "เทพา",
+        "en_name": "Thepha",
+        "class": "2",
+        "id": "4391",
+        "t_flag": "0",
+        "km": "991.990"
+    },
+    {
+        "name": "รามัน",
+        "en_name": "Raman",
+        "class": "2",
+        "id": "4408",
+        "t_flag": "0",
+        "km": "1056.820"
+    },
+    {
+        "name": "รือเสาะ",
+        "en_name": "Ruso",
+        "class": "2",
+        "id": "4411",
+        "t_flag": "0",
+        "km": "1071.190"
+    },
+    {
+        "name": "ตันหยงมัส",
+        "en_name": "Tanyong Mat",
+        "class": "2",
+        "id": "4419",
+        "t_flag": "0",
+        "km": "1099.500"
+    },
+    {
+        "name": "สุไหงปาดี",
+        "en_name": "Su-Ngai Padi",
+        "class": "2",
+        "id": "4428",
+        "t_flag": "0",
+        "km": "1130.100"
+    },
+    {
+        "name": "ตลาดพลู",
+        "en_name": "Talat Phlu",
+        "class": "3",
+        "id": "5003",
+        "t_flag": "0",
+        "km": "1.780"
+    },
+    {
+        "name": "สามเสน",
+        "en_name": "Sam Sen",
+        "class": "3",
+        "id": "1004",
+        "t_flag": "0",
+        "km": "4.800"
+    },
+    {
+        "name": "ศาลาธรรมสพน์",
+        "en_name": "Sala Thammasop",
+        "class": "3",
+        "id": "4008",
+        "t_flag": "0",
+        "km": "14.050"
+    },
+    {
+        "name": "รางโพธิ์",
+        "en_name": "Rang Pho",
+        "class": "3",
+        "id": "5012",
+        "t_flag": "0",
+        "km": "14.250"
+    },
+    {
+        "name": "บ้านทับช้าง",
+        "en_name": "Ban Thap Chang",
+        "class": "3",
+        "id": "3012",
+        "t_flag": "0",
+        "km": "20.650"
+    },
+    {
+        "name": "วัดสุวรรณ",
+        "en_name": "Wat Suwan",
+        "class": "3",
+        "id": "4010",
+        "t_flag": "0",
+        "km": "23.460"
+    },
+    {
+        "name": "ลาดกระบัง",
+        "en_name": "Lat Krabang",
+        "class": "3",
+        "id": "3014",
+        "t_flag": "0",
+        "km": "27.170"
+    },
+    {
+        "name": "วัดงิ้วราย",
+        "en_name": "Wat Ngiu Rai",
+        "class": "3",
+        "id": "4012",
+        "t_flag": "0",
+        "km": "30.800"
+    },
+    {
+        "name": "แม่กลอง",
+        "en_name": "Mae Klong",
+        "class": "3",
+        "id": "5032",
+        "t_flag": "0",
+        "km": "33.570"
+    },
+    {
+        "name": "นครชัยศรี",
+        "en_name": "Nakhon Chaisi",
+        "class": "3",
+        "id": "4013",
+        "t_flag": "0",
+        "km": "35.130"
+    },
+    {
+        "name": "เชียงราก",
+        "en_name": "Chiang Rak",
+        "class": "3",
+        "id": "1022",
+        "t_flag": "0",
+        "km": "37.470"
+    },
+    {
+        "name": "ท่าแฉลบ",
+        "en_name": "Tha Chalaep",
+        "class": "3",
+        "id": "4014",
+        "t_flag": "0",
+        "km": "40.020"
+    },
+    {
+        "name": "ต้นสำโรง",
+        "en_name": "Ton Samrong",
+        "class": "3",
+        "id": "4015",
+        "t_flag": "0",
+        "km": "44.680"
+    },
+    {
+        "name": "เชียงรากน้อย",
+        "en_name": "Chiang Rak Noi",
+        "class": "3",
+        "id": "1024",
+        "t_flag": "0",
+        "km": "46.010"
+    },
+    {
+        "name": "คลองเปรง",
+        "en_name": "Khlong Preng",
+        "class": "3",
+        "id": "3019",
+        "t_flag": "0",
+        "km": "46.360"
+    },
+    {
+        "name": "โพรงมะเดื่อ",
+        "en_name": "Phrong Madua",
+        "class": "3",
+        "id": "4018",
+        "t_flag": "0",
+        "km": "55.360"
+    },
+    {
+        "name": "คลองบางตาล",
+        "en_name": "Khlong Bang Tan",
+        "class": "3",
+        "id": "4019",
+        "t_flag": "0",
+        "km": "59.026"
+    },
+    {
+        "name": "บางน้ำเปรี้ยว",
+        "en_name": "Bang Nam Prieo",
+        "class": "3",
+        "id": "3055",
+        "t_flag": "0",
+        "km": "79.040"
+    },
+    {
+        "name": "ชุมทางคลองสิบเก้า",
+        "en_name": "Khlong Sip Kao Junction",
+        "class": "3",
+        "id": "3057",
+        "t_flag": "0",
+        "km": "85.600"
+    },
+    {
+        "name": "เจ็ดเสมียน",
+        "en_name": "Chet Samian",
+        "class": "3",
+        "id": "4085",
+        "t_flag": "0",
+        "km": "89.183"
+    },
+    {
+        "name": "ท่าเรือน้อย",
+        "en_name": "Tha Rua Noi",
+        "class": "3",
+        "id": "4048",
+        "t_flag": "0",
+        "km": "89.770"
+    },
+    {
+        "name": "พานทอง",
+        "en_name": "Phan Thong",
+        "class": "3",
+        "id": "3029",
+        "t_flag": "0",
+        "km": "91.530"
+    },
+    {
+        "name": "หนองแซง",
+        "en_name": "Nong Saeng",
+        "class": "3",
+        "id": "2002",
+        "t_flag": "0",
+        "km": "98.040"
+    },
+    {
+        "name": "ท่าม่วง",
+        "en_name": "Tha Muang",
+        "class": "3",
+        "id": "4051",
+        "t_flag": "0",
+        "km": "100.350"
+    },
+    {
+        "name": "บ้านป๊อกแป๊ก",
+        "en_name": "Ban Pokpaek",
+        "class": "3",
+        "id": "2005",
+        "t_flag": "0",
+        "km": "107.650"
+    },
+    {
+        "name": "หนองโดน",
+        "en_name": "Nong Don",
+        "class": "3",
+        "id": "1045",
+        "t_flag": "0",
+        "km": "116.560"
+    },
+    {
+        "name": "ปากท่อ",
+        "en_name": "Pak Tho",
+        "class": "3",
+        "id": "4093",
+        "t_flag": "0",
+        "km": "118.668"
+    },
+    {
+        "name": "ชุมทางหนองบัว",
+        "en_name": "Nong Bua Junction",
+        "class": "3",
+        "id": "2009",
+        "t_flag": "0",
+        "km": "119.240"
+    },
+    {
+        "name": "บ้านช่องใต้",
+        "en_name": "Ban Chong Tai",
+        "class": "3",
+        "id": "2012",
+        "t_flag": "0",
+        "km": "128.800"
+    },
+    {
+        "name": "เขาย้อย",
+        "en_name": "Khao Yoi",
+        "class": "3",
+        "id": "4097",
+        "t_flag": "0",
+        "km": "133.695"
+    },
+    {
+        "name": "มาบกะเบา",
+        "en_name": "Map Kabao",
+        "class": "3",
+        "id": "2082",
+        "t_flag": "0",
+        "km": "134.300"
+    },
+    {
+        "name": "ประจันตคาม",
+        "en_name": "Prachantakham",
+        "class": "3",
+        "id": "3070",
+        "t_flag": "0",
+        "km": "137.650"
+    },
+    {
+        "name": "ผาเสด็จ",
+        "en_name": "Pha Sadet",
+        "class": "3",
+        "id": "2083",
+        "t_flag": "0",
+        "km": "138.950"
+    },
+    {
+        "name": "สุพรรณบุรี",
+        "en_name": "Suphan Buri",
+        "class": "3",
+        "id": "4042",
+        "t_flag": "0",
+        "km": "141.600"
+    },
+    {
+        "name": "กลางดง",
+        "en_name": "Klang Dong",
+        "class": "3",
+        "id": "2088",
+        "t_flag": "0",
+        "km": "160.030"
+    },
+    {
+        "name": "ปางอโศก",
+        "en_name": "Pang Asok",
+        "class": "3",
+        "id": "2089",
+        "t_flag": "0",
+        "km": "165.190"
+    },
+    {
+        "name": "บ้านห้วยขวาง",
+        "en_name": "Ban Huai Kwang",
+        "class": "3",
+        "id": "3043",
+        "t_flag": "0",
+        "km": "168.340"
+    },
+    {
+        "name": "หนองจอก",
+        "en_name": "Nong Chok",
+        "class": "3",
+        "id": "4107",
+        "t_flag": "0",
+        "km": "169.901"
+    },
+    {
+        "name": "บันไดม้า",
+        "en_name": "Bandai Ma",
+        "class": "3",
+        "id": "2091",
+        "t_flag": "0",
+        "km": "173.640"
+    },
+    {
+        "name": "จันเสน",
+        "en_name": "Chansen",
+        "class": "3",
+        "id": "1061",
+        "t_flag": "0",
+        "km": "173.860"
+    },
+    {
+        "name": "ช่องแค",
+        "en_name": "Chong Khae",
+        "class": "3",
+        "id": "1063",
+        "t_flag": "0",
+        "km": "180.200"
+    },
+    {
+        "name": "ซับม่วง",
+        "en_name": "Sap Muang",
+        "class": "3",
+        "id": "2095",
+        "t_flag": "0",
+        "km": "187.890"
+    },
+    {
+        "name": "โพนทอง",
+        "en_name": "Phon Thong",
+        "class": "3",
+        "id": "1066",
+        "t_flag": "0",
+        "km": "188.650"
+    },
+    {
+        "name": "น้ำตก",
+        "en_name": "Nam Tok",
+        "class": "3",
+        "id": "4077",
+        "t_flag": "0",
+        "km": "194.240"
+    },
+    {
+        "name": "มาบตาพุด",
+        "en_name": "Map Ta Put",
+        "class": "3",
+        "id": "3115",
+        "t_flag": "0",
+        "km": "200.480"
+    },
+    {
+        "name": "ห้วยทรายใต้",
+        "en_name": "Huai Sai Tai",
+        "class": "3",
+        "id": "4115",
+        "t_flag": "0",
+        "km": "201.640"
+    },
+    {
+        "name": "สระแก้ว",
+        "en_name": "Sa Kaeo",
+        "class": "3",
+        "id": "3087",
+        "t_flag": "0",
+        "km": "205.250"
+    },
+    {
+        "name": "คลองไผ่",
+        "en_name": "Khlong Phai",
+        "class": "3",
+        "id": "2100",
+        "t_flag": "0",
+        "km": "206.220"
+    },
+    {
+        "name": "ลำนารายณ์",
+        "en_name": "Lam Narai",
+        "class": "3",
+        "id": "2033",
+        "t_flag": "0",
+        "km": "208.800"
+    },
+    {
+        "name": "หนองโพ",
+        "en_name": "Nong Pho",
+        "class": "3",
+        "id": "1072",
+        "t_flag": "0",
+        "km": "211.440"
+    },
+    {
+        "name": "เนินมะกอก",
+        "en_name": "Noen Makok",
+        "class": "3",
+        "id": "1076",
+        "t_flag": "0",
+        "km": "224.810"
+    },
+    {
+        "name": "เขาเต่า",
+        "en_name": "Khao Tao",
+        "class": "3",
+        "id": "4121",
+        "t_flag": "0",
+        "km": "225.340"
+    },
+    {
+        "name": "วังก์พง",
+        "en_name": "Wang Phong",
+        "class": "3",
+        "id": "4123",
+        "t_flag": "0",
+        "km": "233.090"
+    },
+    {
+        "name": "วัฒนานคร",
+        "en_name": "Watthana Nakhon",
+        "class": "3",
+        "id": "3094",
+        "t_flag": "0",
+        "km": "233.860"
+    },
+    {
+        "name": "สูงเนิน",
+        "en_name": "Sung Noen",
+        "class": "3",
+        "id": "2107",
+        "t_flag": "0",
+        "km": "233.870"
+    },
+    {
+        "name": "ปราณบุรี",
+        "en_name": "Pran Buri",
+        "class": "3",
+        "id": "4124",
+        "t_flag": "0",
+        "km": "235.861"
+    },
+    {
+        "name": "โคกคลี",
+        "en_name": "Khok Khli",
+        "class": "3",
+        "id": "2042",
+        "t_flag": "0",
+        "km": "240.870"
+    },
+    {
+        "name": "กุดจิก",
+        "en_name": "Kut Chik",
+        "class": "3",
+        "id": "2109",
+        "t_flag": "0",
+        "km": "241.150"
+    },
+    {
+        "name": "ช่องสำราญ",
+        "en_name": "Chong Samran",
+        "class": "3",
+        "id": "2045",
+        "t_flag": "0",
+        "km": "250.640"
+    },
+    {
+        "name": "สามร้อยยอด",
+        "en_name": "Sam Roi Yot",
+        "class": "3",
+        "id": "4128",
+        "t_flag": "0",
+        "km": "254.981"
+    },
+    {
+        "name": "ด่านพรมแดนบ้านคลองลึก",
+        "en_name": "Ban Klong Luek Border",
+        "class": "3",
+        "id": "3130",
+        "t_flag": "0",
+        "km": "260.230"
+    },
+    {
+        "name": "บ้านวะตะแบก (เทพสถิต)",
+        "en_name": "Ban Wa Tabaek (Thep Sa Thit)",
+        "class": "3",
+        "id": "2049",
+        "t_flag": "0",
+        "km": "263.140"
+    },
+    {
+        "name": "ทับกฤช",
+        "en_name": "Thap Krit",
+        "class": "3",
+        "id": "1084",
+        "t_flag": "0",
+        "km": "263.680"
+    },
+    {
+        "name": "คลองปลากด",
+        "en_name": "Khlong Pla Kot",
+        "class": "3",
+        "id": "1086",
+        "t_flag": "0",
+        "km": "270.870"
+    },
+    {
+        "name": "กุยบุรี",
+        "en_name": "Kui Buri",
+        "class": "3",
+        "id": "4133",
+        "t_flag": "0",
+        "km": "271.264"
+    },
+    {
+        "name": "ห้วยยายจิ๋ว",
+        "en_name": "Huai Yai Chiu",
+        "class": "3",
+        "id": "2052",
+        "t_flag": "0",
+        "km": "273.150"
+    },
+    {
+        "name": "บ้านพะเนา",
+        "en_name": "Ban Phanao",
+        "class": "3",
+        "id": "2211",
+        "t_flag": "0",
+        "km": "276.350"
+    },
+    {
+        "name": "ท่าช้าง",
+        "en_name": "Tha Chang",
+        "class": "3",
+        "id": "2213",
+        "t_flag": "0",
+        "km": "285.400"
+    },
+    {
+        "name": "โนนสูง",
+        "en_name": "Non Sung",
+        "class": "3",
+        "id": "2122",
+        "t_flag": "0",
+        "km": "295.080"
+    },
+    {
+        "name": "หินดาษ",
+        "en_name": "Hin Dat",
+        "class": "3",
+        "id": "2222",
+        "t_flag": "0",
+        "km": "316.900"
+    },
+    {
+        "name": "เมืองคง",
+        "en_name": "Muang Khong",
+        "class": "3",
+        "id": "2131",
+        "t_flag": "0",
+        "km": "326.800"
+    },
+    {
+        "name": "ห้วยยาง",
+        "en_name": "Huai Yang",
+        "class": "3",
+        "id": "4149",
+        "t_flag": "0",
+        "km": "329.110"
+    },
+    {
+        "name": "หัวดง",
+        "en_name": "Hua Dong",
+        "class": "3",
+        "id": "1103",
+        "t_flag": "0",
+        "km": "332.600"
+    },
+    {
+        "name": "วังกรด",
+        "en_name": "Wang Krot",
+        "class": "3",
+        "id": "1105",
+        "t_flag": "0",
+        "km": "339.360"
+    },
+    {
+        "name": "บ้านเหลื่อม",
+        "en_name": "Ban Luam",
+        "class": "3",
+        "id": "2072",
+        "t_flag": "0",
+        "km": "341.180"
+    },
+    {
+        "name": "ท่าฬ่อ",
+        "en_name": "Tha Lo",
+        "class": "3",
+        "id": "1109",
+        "t_flag": "0",
+        "km": "354.260"
+    },
+    {
+        "name": "ทะเมนชัย",
+        "en_name": "Thamen Chai",
+        "class": "3",
+        "id": "2231",
+        "t_flag": "0",
+        "km": "354.850"
+    },
+    {
+        "name": "หนองบัวลาย",
+        "en_name": "Nong Bua Lai",
+        "class": "3",
+        "id": "2139",
+        "t_flag": "0",
+        "km": "357.360"
+    },
+    {
+        "name": "บ้านกรูด",
+        "en_name": "Ban Krut",
+        "class": "3",
+        "id": "4158",
+        "t_flag": "0",
+        "km": "360.450"
+    },
+    {
+        "name": "บ้านใหม่",
+        "en_name": "Ban Mai",
+        "class": "3",
+        "id": "1114",
+        "t_flag": "0",
+        "km": "375.310"
+    },
+    {
+        "name": "บ้านเต็งหนาม",
+        "en_name": "Ban Teng Nam",
+        "class": "3",
+        "id": "1119",
+        "t_flag": "0",
+        "km": "393.750"
+    },
+    {
+        "name": "ห้วยสัก",
+        "en_name": "Huai Sak",
+        "class": "3",
+        "id": "4169",
+        "t_flag": "0",
+        "km": "399.761"
+    },
+    {
+        "name": "เขาไชยราช",
+        "en_name": "Khao Chaiyarat",
+        "class": "3",
+        "id": "4172",
+        "t_flag": "0",
+        "km": "409.358"
+    },
+    {
+        "name": "ลำชี",
+        "en_name": "Lam Chi",
+        "class": "3",
+        "id": "2246",
+        "t_flag": "0",
+        "km": "412.000"
+    },
+    {
+        "name": "พรหมพิราม",
+        "en_name": "Phrom Phiram",
+        "class": "3",
+        "id": "1125",
+        "t_flag": "0",
+        "km": "414.500"
+    },
+    {
+        "name": "มาบอำมฤต",
+        "en_name": "Map Ammarit",
+        "class": "3",
+        "id": "4175",
+        "t_flag": "0",
+        "km": "420.501"
+    },
+    {
+        "name": "หนองตม",
+        "en_name": "Nong Tom",
+        "class": "3",
+        "id": "1127",
+        "t_flag": "0",
+        "km": "423.200"
+    },
+    {
+        "name": "ท่าพระ",
+        "en_name": "Tha Phra",
+        "class": "3",
+        "id": "2160",
+        "t_flag": "0",
+        "km": "439.810"
+    },
+    {
+        "name": "พิชัย",
+        "en_name": "Phichai",
+        "class": "3",
+        "id": "1134",
+        "t_flag": "0",
+        "km": "447.550"
+    },
+    {
+        "name": "สะพลี",
+        "en_name": "Saphli",
+        "class": "3",
+        "id": "4182",
+        "t_flag": "0",
+        "km": "453.675"
+    },
+    {
+        "name": "ชุมทางบ้านดารา",
+        "en_name": "Ban Dara Junction",
+        "class": "3",
+        "id": "1137",
+        "t_flag": "0",
+        "km": "458.310"
+    },
+    {
+        "name": "ท่าสัก",
+        "en_name": "Tha Sak",
+        "class": "3",
+        "id": "1144",
+        "t_flag": "0",
+        "km": "461.800"
+    },
+    {
+        "name": "ตรอน",
+        "en_name": "Tron",
+        "class": "3",
+        "id": "1146",
+        "t_flag": "0",
+        "km": "469.860"
+    },
+    {
+        "name": "โนนพยอม",
+        "en_name": "Non Phayom",
+        "class": "3",
+        "id": "2170",
+        "t_flag": "0",
+        "km": "474.930"
+    },
+    {
+        "name": "ห้วยทับทัน",
+        "en_name": "Huai Thap Than",
+        "class": "3",
+        "id": "2264",
+        "t_flag": "0",
+        "km": "481.500"
+    },
+    {
+        "name": "เขาสวนกวาง",
+        "en_name": "Khao Suan Kwang",
+        "class": "3",
+        "id": "2177",
+        "t_flag": "0",
+        "km": "500.510"
+    },
+    {
+        "name": "เขาสวนทุเรียน",
+        "en_name": "Khao Suan Thurian",
+        "class": "3",
+        "id": "4196",
+        "t_flag": "0",
+        "km": "508.510"
+    },
+    {
+        "name": "โนนสะอาด",
+        "en_name": "Non Sa-at",
+        "class": "3",
+        "id": "2181",
+        "t_flag": "0",
+        "km": "514.450"
+    },
+    {
+        "name": "ปากตะโก",
+        "en_name": "Pak Tako",
+        "class": "3",
+        "id": "4199",
+        "t_flag": "0",
+        "km": "516.810"
+    },
+    {
+        "name": "ห้วยเกิ้ง",
+        "en_name": "Huai Koeng",
+        "class": "3",
+        "id": "2183",
+        "t_flag": "0",
+        "km": "523.400"
+    },
+    {
+        "name": "แก่งหลวง",
+        "en_name": "Kaeng Luang",
+        "class": "3",
+        "id": "1167",
+        "t_flag": "0",
+        "km": "546.940"
+    },
+    {
+        "name": "หนองตะไก้",
+        "en_name": "Nong Takai",
+        "class": "3",
+        "id": "2190",
+        "t_flag": "0",
+        "km": "550.650"
+    },
+    {
+        "name": "ละแม",
+        "en_name": "Lamae",
+        "class": "3",
+        "id": "4208",
+        "t_flag": "0",
+        "km": "553.700"
+    },
+    {
+        "name": "ห้วยขยุง",
+        "en_name": "Huai Khayung",
+        "class": "3",
+        "id": "2285",
+        "t_flag": "0",
+        "km": "553.990"
+    },
+    {
+        "name": "หนองขอนกว้าง",
+        "en_name": "Nong Khon Kwang",
+        "class": "3",
+        "id": "2194",
+        "t_flag": "0",
+        "km": "565.400"
+    },
+    {
+        "name": "คันธุลี",
+        "en_name": "Khan Thuli",
+        "class": "3",
+        "id": "4212",
+        "t_flag": "0",
+        "km": "566.370"
+    },
+    {
+        "name": "แม่เมาะ",
+        "en_name": "Mae Mo",
+        "class": "3",
+        "id": "1184",
+        "t_flag": "0",
+        "km": "609.160"
+    },
+    {
+        "name": "ท่าฉาง",
+        "en_name": "Tha Chang",
+        "class": "3",
+        "id": "4224",
+        "t_flag": "0",
+        "km": "610.530"
+    },
+    {
+        "name": "มะลวน",
+        "en_name": "Maluan",
+        "class": "3",
+        "id": "4227",
+        "t_flag": "0",
+        "km": "623.920"
+    },
+    {
+        "name": "แม่ทะ",
+        "en_name": "Mae Tha",
+        "class": "3",
+        "id": "1189",
+        "t_flag": "0",
+        "km": "628.450"
+    },
+    {
+        "name": "ชุมทางบ้านทุ่งโพธิ์",
+        "en_name": "Ban Thung Pho Junction",
+        "class": "3",
+        "id": "4229",
+        "t_flag": "0",
+        "km": "631.000"
+    },
+    {
+        "name": "หนองวัวเฒ่า",
+        "en_name": "Nong Wua Thao",
+        "class": "3",
+        "id": "1192",
+        "t_flag": "0",
+        "km": "637.140"
+    },
+    {
+        "name": "เขาหัวควาย",
+        "en_name": "Khao Hua Khwai",
+        "class": "3",
+        "id": "4241",
+        "t_flag": "0",
+        "km": "641.510"
+    },
+    {
+        "name": "ห้างฉัตร",
+        "en_name": "Hang Chat",
+        "class": "3",
+        "id": "1196",
+        "t_flag": "0",
+        "km": "654.850"
+    },
+    {
+        "name": "แม่ตานน้อย",
+        "en_name": "Mae Tan Noi",
+        "class": "3",
+        "id": "1201",
+        "t_flag": "0",
+        "km": "671.080"
+    },
+    {
+        "name": "ขุนตาน",
+        "en_name": "Khun Tan",
+        "class": "3",
+        "id": "1204",
+        "t_flag": "0",
+        "km": "683.140"
+    },
+    {
+        "name": "ทาชมภู",
+        "en_name": "Tha Chomphu",
+        "class": "3",
+        "id": "1206",
+        "t_flag": "0",
+        "km": "691.890"
+    },
+    {
+        "name": "ศาลาแม่ทา",
+        "en_name": "Sala Mae Tha",
+        "class": "3",
+        "id": "1208",
+        "t_flag": "0",
+        "km": "700.680"
+    },
+    {
+        "name": "หนองหล่ม",
+        "en_name": "Nong Lom",
+        "class": "3",
+        "id": "1212",
+        "t_flag": "0",
+        "km": "713.010"
+    },
+    {
+        "name": "ทานพอ",
+        "en_name": "Thanpho",
+        "class": "3",
+        "id": "4261",
+        "t_flag": "0",
+        "km": "716.660"
+    },
+    {
+        "name": "ฉวาง",
+        "en_name": "Chawang",
+        "class": "3",
+        "id": "4262",
+        "t_flag": "0",
+        "km": "722.410"
+    },
+    {
+        "name": "คลองจันดี",
+        "en_name": "Khlong Chan Di",
+        "class": "3",
+        "id": "4264",
+        "t_flag": "0",
+        "km": "727.950"
+    },
+    {
+        "name": "สารภี",
+        "en_name": "Saraphi",
+        "class": "3",
+        "id": "1220",
+        "t_flag": "0",
+        "km": "742.780"
+    },
+    {
+        "name": "นาบอน",
+        "en_name": "Na Bon",
+        "class": "3",
+        "id": "4268",
+        "t_flag": "0",
+        "km": "743.010"
+    },
+    {
+        "name": "ช่องเขา",
+        "en_name": "Chong Khao",
+        "class": "3",
+        "id": "4297",
+        "t_flag": "0",
+        "km": "767.780"
+    },
+    {
+        "name": "ชุมทางเขาชุมทอง",
+        "en_name": "Khao Chum Thong Junction",
+        "class": "3",
+        "id": "4300",
+        "t_flag": "0",
+        "km": "781.010"
+    },
+    {
+        "name": "ปากคลอง",
+        "en_name": "Pak Khlong",
+        "class": "3",
+        "id": "4321",
+        "t_flag": "0",
+        "km": "833.110"
+    },
+    {
+        "name": "กันตัง",
+        "en_name": "Kantang",
+        "class": "3",
+        "id": "4294",
+        "t_flag": "0",
+        "km": "850.080"
+    },
+    {
+        "name": "เขาชัยสน",
+        "en_name": "Khao Chaison",
+        "class": "3",
+        "id": "4330",
+        "t_flag": "0",
+        "km": "865.010"
+    },
+    {
+        "name": "บางแก้ว",
+        "en_name": "Bang Kaeo",
+        "class": "3",
+        "id": "4331",
+        "t_flag": "0",
+        "km": "870.170"
+    },
+    {
+        "name": "หารเทา",
+        "en_name": "Hanthao",
+        "class": "3",
+        "id": "4336",
+        "t_flag": "0",
+        "km": "888.680"
+    },
+    {
+        "name": "ควนเนียง",
+        "en_name": "Khuan Niang",
+        "class": "3",
+        "id": "4340",
+        "t_flag": "0",
+        "km": "902.970"
+    },
+    {
+        "name": "บางกล่ำ",
+        "en_name": "Bang Klam",
+        "class": "3",
+        "id": "4344",
+        "t_flag": "0",
+        "km": "917.020"
+    },
+    {
+        "name": "นาม่วง",
+        "en_name": "Na Muang",
+        "class": "3",
+        "id": "4377",
+        "t_flag": "0",
+        "km": "940.260"
+    },
+    {
+        "name": "คลองแงะ",
+        "en_name": "Khlong Ngae",
+        "class": "3",
+        "id": "4368",
+        "t_flag": "0",
+        "km": "952.640"
+    },
+    {
+        "name": "นาประดู่",
+        "en_name": "Na Pradu",
+        "class": "3",
+        "id": "4397",
+        "t_flag": "0",
+        "km": "1016.730"
+    },
+    {
+        "name": "มะรือโบ",
+        "en_name": "Marubo",
+        "class": "3",
+        "id": "4416",
+        "t_flag": "0",
+        "km": "1089.460"
+    },
+    {
+        "name": "เจาะไอร้อง",
+        "en_name": "Cho Ai Rong",
+        "class": "3",
+        "id": "4423",
+        "t_flag": "0",
+        "km": "1111.150"
+    },
+    {
+        "name": "บ้านแหลม",
+        "en_name": "Ban Laem",
+        "class": "4",
+        "id": "5019",
+        "t_flag": "0",
+        "km": ".000"
+    },
+    {
+        "name": "วัดสิงห์",
+        "en_name": "Wat Sing",
+        "class": "4",
+        "id": "5008",
+        "t_flag": "0",
+        "km": "7.150"
+    },
+    {
+        "name": "บางบำหรุ",
+        "en_name": "Bang Bamru",
+        "class": "4",
+        "id": "4005",
+        "t_flag": "0",
+        "km": "17.940"
+    },
+    {
+        "name": "คลองหลวงแพ่ง",
+        "en_name": "Khlong Luang Phaeng",
+        "class": "4",
+        "id": "3017",
+        "t_flag": "0",
+        "km": "39.610"
+    },
+    {
+        "name": "คลองพุทรา",
+        "en_name": "Khlong Phutsa",
+        "class": "4",
+        "id": "1026",
+        "t_flag": "0",
+        "km": "51.880"
+    },
+    {
+        "name": "คลองบางพระ",
+        "en_name": "Khlong Bang Phra",
+        "class": "4",
+        "id": "3021",
+        "t_flag": "0",
+        "km": "53.600"
+    },
+    {
+        "name": "บ้านโพ",
+        "en_name": "Ban Pho",
+        "class": "4",
+        "id": "1029",
+        "t_flag": "0",
+        "km": "62.750"
+    },
+    {
+        "name": "นครชุมน์",
+        "en_name": "Nakhon Chum",
+        "class": "4",
+        "id": "4081",
+        "t_flag": "0",
+        "km": "73.638"
+    },
+    {
+        "name": "สระโกสินารายณ์",
+        "en_name": "Sa Kosi Narai",
+        "class": "4",
+        "id": "4044",
+        "t_flag": "0",
+        "km": "73.650"
+    },
+    {
+        "name": "บ้านม้า",
+        "en_name": "Ban Ma",
+        "class": "4",
+        "id": "1032",
+        "t_flag": "0",
+        "km": "74.690"
+    },
+    {
+        "name": "ดอนสีนนท์",
+        "en_name": "Don Si Non",
+        "class": "4",
+        "id": "3026",
+        "t_flag": "0",
+        "km": "75.970"
+    },
+    {
+        "name": "คลองตาคต",
+        "en_name": "Khlong Ta Khot",
+        "class": "4",
+        "id": "4082",
+        "t_flag": "0",
+        "km": "77.221"
+    },
+    {
+        "name": "ลูกแก",
+        "en_name": "Luk Kae",
+        "class": "4",
+        "id": "4045",
+        "t_flag": "0",
+        "km": "77.430"
+    },
+    {
+        "name": "มาบพระจันทร์",
+        "en_name": "Map Phra Chan",
+        "class": "4",
+        "id": "1033",
+        "t_flag": "0",
+        "km": "78.980"
+    },
+    {
+        "name": "พระแก้ว",
+        "en_name": "Phra Kaeo",
+        "class": "4",
+        "id": "1035",
+        "t_flag": "0",
+        "km": "85.440"
+    },
+    {
+        "name": "โยทะกา",
+        "en_name": "Yothaka",
+        "class": "4",
+        "id": "3059",
+        "t_flag": "0",
+        "km": "93.730"
+    },
+    {
+        "name": "บ้านกล้วย",
+        "en_name": "Ban Kluai",
+        "class": "4",
+        "id": "4087",
+        "t_flag": "0",
+        "km": "94.602"
+    },
+    {
+        "name": "หนองกวย",
+        "en_name": "Nong Kuai",
+        "class": "4",
+        "id": "2001",
+        "t_flag": "0",
+        "km": "94.620"
+    },
+    {
+        "name": "หนองวิวัฒน์",
+        "en_name": "Nong Wiwat",
+        "class": "4",
+        "id": "1037",
+        "t_flag": "0",
+        "km": "96.440"
+    },
+    {
+        "name": "หนองสีดา",
+        "en_name": "Nong Sida",
+        "class": "4",
+        "id": "2004",
+        "t_flag": "0",
+        "km": "103.334"
+    },
+    {
+        "name": "บ้านคูบัว",
+        "en_name": "Ban Khu Bua",
+        "class": "4",
+        "id": "4090",
+        "t_flag": "0",
+        "km": "105.460"
+    },
+    {
+        "name": "บ่อตะคร้อ",
+        "en_name": "Bo Takhro",
+        "class": "4",
+        "id": "4091",
+        "t_flag": "0",
+        "km": "111.238"
+    },
+    {
+        "name": "องครักษ์",
+        "en_name": "Ongkharak",
+        "class": "4",
+        "id": "3118",
+        "t_flag": "0",
+        "km": "115.000"
+    },
+    {
+        "name": "บ้านปากพลี",
+        "en_name": "Ban Pak Phli",
+        "class": "4",
+        "id": "3064",
+        "t_flag": "0",
+        "km": "115.280"
+    },
+    {
+        "name": "บางพระ",
+        "en_name": "Bang Phra",
+        "class": "4",
+        "id": "3034",
+        "t_flag": "0",
+        "km": "121.310"
+    },
+    {
+        "name": "บ้านกลับ",
+        "en_name": "Ban Klap",
+        "class": "4",
+        "id": "1047",
+        "t_flag": "0",
+        "km": "121.720"
+    },
+    {
+        "name": "บางเค็ม",
+        "en_name": "Bang Khem",
+        "class": "4",
+        "id": "4095",
+        "t_flag": "0",
+        "km": "127.151"
+    },
+    {
+        "name": "บ้านป่าหวาย",
+        "en_name": "Ban Pa Wai",
+        "class": "4",
+        "id": "1048",
+        "t_flag": "0",
+        "km": "127.440"
+    },
+    {
+        "name": "โคกมะกอก",
+        "en_name": "Khok Makok",
+        "class": "4",
+        "id": "3068",
+        "t_flag": "0",
+        "km": "131.000"
+    },
+    {
+        "name": "ท่าแค",
+        "en_name": "Tha Khae",
+        "class": "4",
+        "id": "1051",
+        "t_flag": "0",
+        "km": "137.510"
+    },
+    {
+        "name": "วิหารแดง",
+        "en_name": "Wihan Daeng",
+        "class": "4",
+        "id": "3120",
+        "t_flag": "0",
+        "km": "138.400"
+    },
+    {
+        "name": "หนองปลาไหล",
+        "en_name": "Nong Pla Lai",
+        "class": "4",
+        "id": "4098",
+        "t_flag": "0",
+        "km": "139.486"
+    },
+    {
+        "name": "วังเย็น",
+        "en_name": "Wang Yen",
+        "class": "4",
+        "id": "4063",
+        "t_flag": "0",
+        "km": "140.150"
+    },
+    {
+        "name": "บางจาก",
+        "en_name": "Bang Chak",
+        "class": "4",
+        "id": "4099",
+        "t_flag": "0",
+        "km": "143.901"
+    },
+    {
+        "name": "โคกกะเทียม",
+        "en_name": "Khok Kathiam",
+        "class": "4",
+        "id": "1053",
+        "t_flag": "0",
+        "km": "144.380"
+    },
+    {
+        "name": "บ้านดงบัง",
+        "en_name": "Ban Dong Bang",
+        "class": "4",
+        "id": "3072",
+        "t_flag": "0",
+        "km": "146.730"
+    },
+    {
+        "name": "หินซ้อน",
+        "en_name": "Hin Son",
+        "class": "4",
+        "id": "2017",
+        "t_flag": "0",
+        "km": "147.900"
+    },
+    {
+        "name": "บุใหญ่",
+        "en_name": "Bu Yai",
+        "class": "4",
+        "id": "3121",
+        "t_flag": "0",
+        "km": "149.000"
+    },
+    {
+        "name": "หนองเต่า",
+        "en_name": "Nong Tao",
+        "class": "4",
+        "id": "1055",
+        "t_flag": "0",
+        "km": "150.080"
+    },
+    {
+        "name": "หนองทรายขาว",
+        "en_name": "Nong Sai Khao",
+        "class": "4",
+        "id": "1056",
+        "t_flag": "0",
+        "km": "154.930"
+    },
+    {
+        "name": "แก่งเสือเต้น",
+        "en_name": "Kaeng Sue Ten",
+        "class": "4",
+        "id": "2020",
+        "t_flag": "0",
+        "km": "159.650"
+    },
+    {
+        "name": "เขาทโมน",
+        "en_name": "Khao Thamon",
+        "class": "4",
+        "id": "4104",
+        "t_flag": "0",
+        "km": "160.321"
+    },
+    {
+        "name": "ท่ากิเลน",
+        "en_name": "Tha Kilen",
+        "class": "4",
+        "id": "4069",
+        "t_flag": "0",
+        "km": "161.950"
+    },
+    {
+        "name": "ชุมทางบ้านไผ่นาบุญ",
+        "en_name": "Ban Phai Na Bun Junction",
+        "class": "4",
+        "id": "3122",
+        "t_flag": "0",
+        "km": "162.811"
+    },
+    {
+        "name": "หนองไม้เหลือง",
+        "en_name": "Nong Mai Luang",
+        "class": "4",
+        "id": "4105",
+        "t_flag": "0",
+        "km": "164.212"
+    },
+    {
+        "name": "หนองสัง",
+        "en_name": "Nong Sang",
+        "class": "4",
+        "id": "3078",
+        "t_flag": "0",
+        "km": "172.710"
+    },
+    {
+        "name": "หนองศาลา",
+        "en_name": "Nong Sala",
+        "class": "4",
+        "id": "4108",
+        "t_flag": "0",
+        "km": "175.409"
+    },
+    {
+        "name": "โคกสลุง",
+        "en_name": "Khok Salung",
+        "class": "4",
+        "id": "2024",
+        "t_flag": "0",
+        "km": "176.550"
+    },
+    {
+        "name": "วังโพ",
+        "en_name": "Wang Pho",
+        "class": "4",
+        "id": "4073",
+        "t_flag": "0",
+        "km": "178.100"
+    },
+    {
+        "name": "ชุมทางเขาชีจรรย์",
+        "en_name": "Kao Chi Chan Junction",
+        "class": "4",
+        "id": "3045",
+        "t_flag": "0",
+        "km": "180.000"
+    },
+    {
+        "name": "บ้านพลูตาหลวง",
+        "en_name": "Ban Plu Ta Luang",
+        "class": "4",
+        "id": "3047",
+        "t_flag": "0",
+        "km": "184.030"
+    },
+    {
+        "name": "สุรนารายณ์",
+        "en_name": "Suranarai",
+        "class": "4",
+        "id": "2026",
+        "t_flag": "0",
+        "km": "185.800"
+    },
+    {
+        "name": "อู่ตะเภา",
+        "en_name": "Utaphao",
+        "class": "4",
+        "id": "3048",
+        "t_flag": "0",
+        "km": "188.940"
+    },
+    {
+        "name": "บ้านแก้ง",
+        "en_name": "Ban Kaeng",
+        "class": "4",
+        "id": "3083",
+        "t_flag": "0",
+        "km": "190.060"
+    },
+    {
+        "name": "บ้านฉาง",
+        "en_name": "Ban Chang",
+        "class": "4",
+        "id": "3110",
+        "t_flag": "0",
+        "km": "192.250"
+    },
+    {
+        "name": "จันทึก",
+        "en_name": "Chanthuk",
+        "class": "4",
+        "id": "2096",
+        "t_flag": "0",
+        "km": "195.500"
+    },
+    {
+        "name": "จุกเสม็ด",
+        "en_name": "Chuck Samet",
+        "class": "4",
+        "id": "3049",
+        "t_flag": "0",
+        "km": "195.600"
+    },
+    {
+        "name": "ห้วยทรายเหนือ",
+        "en_name": "Huai Sai Nua",
+        "class": "4",
+        "id": "4114",
+        "t_flag": "0",
+        "km": "197.861"
+    },
+    {
+        "name": "ดงมะกุ",
+        "en_name": "Dong Maku",
+        "class": "4",
+        "id": "1069",
+        "t_flag": "0",
+        "km": "198.800"
+    },
+    {
+        "name": "คลองขนานจิตร",
+        "en_name": "Khlong Khanan Chit",
+        "class": "4",
+        "id": "2097",
+        "t_flag": "0",
+        "km": "202.200"
+    },
+    {
+        "name": "หัวหวาย",
+        "en_name": "Hua Wai",
+        "class": "4",
+        "id": "1070",
+        "t_flag": "0",
+        "km": "204.060"
+    },
+    {
+        "name": "ลาดบัวขาว",
+        "en_name": "Lat Bua Khao",
+        "class": "4",
+        "id": "2101",
+        "t_flag": "0",
+        "km": "209.410"
+    },
+    {
+        "name": "บ้านใหม่สำโรง",
+        "en_name": "Ban Mai Samrong",
+        "class": "4",
+        "id": "2102",
+        "t_flag": "0",
+        "km": "214.900"
+    },
+    {
+        "name": "หนองแก",
+        "en_name": "Nong Kae",
+        "class": "4",
+        "id": "4119",
+        "t_flag": "0",
+        "km": "216.987"
+    },
+    {
+        "name": "หัวงิ้ว",
+        "en_name": "Hua Ngiu",
+        "class": "4",
+        "id": "1074",
+        "t_flag": "0",
+        "km": "217.220"
+    },
+    {
+        "name": "หนองน้ำขุ่น",
+        "en_name": "Nong Nam Khun",
+        "class": "4",
+        "id": "2103",
+        "t_flag": "0",
+        "km": "218.270"
+    },
+    {
+        "name": "สวนสนประดิพัทธ์",
+        "en_name": "Suan Soan Pradipat",
+        "class": "4",
+        "id": "4120",
+        "t_flag": "0",
+        "km": "220.816"
+    },
+    {
+        "name": "แผ่นดินทอง",
+        "en_name": "Phaendin Thong",
+        "class": "4",
+        "id": "2038",
+        "t_flag": "0",
+        "km": "226.450"
+    },
+    {
+        "name": "เขาทอง",
+        "en_name": "Khao Thong",
+        "class": "4",
+        "id": "1079",
+        "t_flag": "0",
+        "km": "235.490"
+    },
+    {
+        "name": "หนองคาง",
+        "en_name": "Nong Khang",
+        "class": "4",
+        "id": "4126",
+        "t_flag": "0",
+        "km": "246.937"
+    },
+    {
+        "name": "โคกกรวด",
+        "en_name": "Khok Kruat",
+        "class": "4",
+        "id": "2111",
+        "t_flag": "0",
+        "km": "249.940"
+    },
+    {
+        "name": "บึงบอระเพ็ด",
+        "en_name": "Bung Borapret",
+        "class": "4",
+        "id": "1226",
+        "t_flag": "0",
+        "km": "257.150"
+    },
+    {
+        "name": "ภูเขาลาด",
+        "en_name": "Phu Khao Lat",
+        "class": "4",
+        "id": "2113",
+        "t_flag": "0",
+        "km": "257.440"
+    },
+    {
+        "name": "สามกระทาย",
+        "en_name": "Sam Krathai",
+        "class": "4",
+        "id": "4130",
+        "t_flag": "0",
+        "km": "260.924"
+    },
+    {
+        "name": "บ้านเกาะ",
+        "en_name": "Ban Ko",
+        "class": "4",
+        "id": "2117",
+        "t_flag": "0",
+        "km": "272.500"
+    },
+    {
+        "name": "บ่อนอก",
+        "en_name": "Bo Nok",
+        "class": "4",
+        "id": "4135",
+        "t_flag": "0",
+        "km": "278.836"
+    },
+    {
+        "name": "บ้านกระโดน",
+        "en_name": "Ban Kradon",
+        "class": "4",
+        "id": "2120",
+        "t_flag": "0",
+        "km": "284.670"
+    },
+    {
+        "name": "ทุ่งมะเม่า",
+        "en_name": "Thung Mamao",
+        "class": "4",
+        "id": "4138",
+        "t_flag": "0",
+        "km": "288.912"
+    },
+    {
+        "name": "หนองแมว",
+        "en_name": "Nong Maeo",
+        "class": "4",
+        "id": "2121",
+        "t_flag": "0",
+        "km": "289.790"
+    },
+    {
+        "name": "วังกร่าง",
+        "en_name": "Wang Krang",
+        "class": "4",
+        "id": "1091",
+        "t_flag": "0",
+        "km": "290.240"
+    },
+    {
+        "name": "หนองมโนรมย์",
+        "en_name": "Nong Manorom",
+        "class": "4",
+        "id": "2215",
+        "t_flag": "0",
+        "km": "293.260"
+    },
+    {
+        "name": "คั่นกระได",
+        "en_name": "Khan Kradai",
+        "class": "4",
+        "id": "4140",
+        "t_flag": "0",
+        "km": "294.549"
+    },
+    {
+        "name": "บ้านดงพลอง",
+        "en_name": "Ban Dong Phlong",
+        "class": "4",
+        "id": "2124",
+        "t_flag": "0",
+        "km": "302.190"
+    },
+    {
+        "name": "หอไกร",
+        "en_name": "Ho Krai",
+        "class": "4",
+        "id": "1095",
+        "t_flag": "0",
+        "km": "303.500"
+    },
+    {
+        "name": "บ้านมะค่า",
+        "en_name": "Ban Makha",
+        "class": "4",
+        "id": "2126",
+        "t_flag": "0",
+        "km": "308.200"
+    },
+    {
+        "name": "บ้านหินโคน",
+        "en_name": "Ban Hin Khon",
+        "class": "4",
+        "id": "2220",
+        "t_flag": "0",
+        "km": "309.750"
+    },
+    {
+        "name": "ดงตะขบ",
+        "en_name": "Dong Takhop",
+        "class": "4",
+        "id": "1097",
+        "t_flag": "0",
+        "km": "309.870"
+    },
+    {
+        "name": "พลสงคราม",
+        "en_name": "Phon Songkhram",
+        "class": "4",
+        "id": "2128",
+        "t_flag": "0",
+        "km": "315.650"
+    },
+    {
+        "name": "วังด้วน",
+        "en_name": "Wang Duan",
+        "class": "4",
+        "id": "4146",
+        "t_flag": "0",
+        "km": "318.258"
+    },
+    {
+        "name": "บ้านดอนใหญ่",
+        "en_name": "Ban Don Yai",
+        "class": "4",
+        "id": "2129",
+        "t_flag": "0",
+        "km": "320.350"
+    },
+    {
+        "name": "หนองฉิม",
+        "en_name": "Nong Chim",
+        "class": "4",
+        "id": "2066",
+        "t_flag": "0",
+        "km": "322.850"
+    },
+    {
+        "name": "ห้วยเกตุ",
+        "en_name": "Huai Ket",
+        "class": "4",
+        "id": "1101",
+        "t_flag": "0",
+        "km": "324.910"
+    },
+    {
+        "name": "โนนทองหลาง",
+        "en_name": "Non Thong Lang",
+        "class": "4",
+        "id": "2133",
+        "t_flag": "0",
+        "km": "335.710"
+    },
+    {
+        "name": "หนองกระทิง",
+        "en_name": "Nong Krathing",
+        "class": "4",
+        "id": "2227",
+        "t_flag": "0",
+        "km": "337.500"
+    },
+    {
+        "name": "หนองพลวง",
+        "en_name": "Nong Phluang",
+        "class": "4",
+        "id": "2076",
+        "t_flag": "0",
+        "km": "355.190"
+    },
+    {
+        "name": "บ้านแสลงพัน",
+        "en_name": "Ban Salaeng Phan",
+        "class": "4",
+        "id": "2233",
+        "t_flag": "0",
+        "km": "363.300"
+    },
+    {
+        "name": "แม่เทียบ",
+        "en_name": "Mae Thiap",
+        "class": "4",
+        "id": "1112",
+        "t_flag": "0",
+        "km": "366.210"
+    },
+    {
+        "name": "บ้านหนองตาด",
+        "en_name": "Ban Nong Tat",
+        "class": "4",
+        "id": "2234",
+        "t_flag": "0",
+        "km": "366.500"
+    },
+    {
+        "name": "หนองมะเขือ",
+        "en_name": "Nong Makhua",
+        "class": "4",
+        "id": "2142",
+        "t_flag": "0",
+        "km": "370.040"
+    },
+    {
+        "name": "นาผักขวง",
+        "en_name": "Na Phak Khuang",
+        "class": "4",
+        "id": "4161",
+        "t_flag": "0",
+        "km": "371.040"
+    },
+    {
+        "name": "ชะม่วง",
+        "en_name": "Cha Muang",
+        "class": "4",
+        "id": "4165",
+        "t_flag": "0",
+        "km": "385.920"
+    },
+    {
+        "name": "บ้านหัน",
+        "en_name": "Ban Han",
+        "class": "4",
+        "id": "2149",
+        "t_flag": "0",
+        "km": "396.820"
+    },
+    {
+        "name": "บ้านตูม",
+        "en_name": "Ban Tum",
+        "class": "4",
+        "id": "1121",
+        "t_flag": "0",
+        "km": "400.050"
+    },
+    {
+        "name": "แควน้อย",
+        "en_name": "Khwae Noi",
+        "class": "4",
+        "id": "1122",
+        "t_flag": "0",
+        "km": "405.310"
+    },
+    {
+        "name": "หนองเต็ง",
+        "en_name": "Nong Teng",
+        "class": "4",
+        "id": "2244",
+        "t_flag": "0",
+        "km": "405.500"
+    },
+    {
+        "name": "บ้านแฮด",
+        "en_name": "Ban Haet",
+        "class": "4",
+        "id": "2156",
+        "t_flag": "0",
+        "km": "423.600"
+    },
+    {
+        "name": "บุฤาษี",
+        "en_name": "Bu Rusi",
+        "class": "4",
+        "id": "2250",
+        "t_flag": "0",
+        "km": "428.600"
+    },
+    {
+        "name": "บ้านบุ่ง",
+        "en_name": "Ban Bung",
+        "class": "4",
+        "id": "1130",
+        "t_flag": "0",
+        "km": "432.750"
+    },
+    {
+        "name": "คลองวังช้าง",
+        "en_name": "Khlong Wang Chang",
+        "class": "4",
+        "id": "4178",
+        "t_flag": "0",
+        "km": "434.320"
+    },
+    {
+        "name": "เมืองที",
+        "en_name": "Muang Thi",
+        "class": "4",
+        "id": "2252",
+        "t_flag": "0",
+        "km": "437.160"
+    },
+    {
+        "name": "บ้านโคน",
+        "en_name": "Ban Khon",
+        "class": "4",
+        "id": "1131",
+        "t_flag": "0",
+        "km": "437.410"
+    },
+    {
+        "name": "กะโดนค้อ",
+        "en_name": "Kadon Kho",
+        "class": "4",
+        "id": "2254",
+        "t_flag": "0",
+        "km": "445.500"
+    },
+    {
+        "name": "บ้านคอกม้า",
+        "en_name": "Ban Khok Ma",
+        "class": "4",
+        "id": "4181",
+        "t_flag": "0",
+        "km": "447.225"
+    },
+    {
+        "name": "ไร่อ้อย",
+        "en_name": "Rai Oi",
+        "class": "4",
+        "id": "1136",
+        "t_flag": "0",
+        "km": "453.980"
+    },
+    {
+        "name": "บ้านกะลัน",
+        "en_name": "Ban Kalan",
+        "class": "4",
+        "id": "2258",
+        "t_flag": "0",
+        "km": "460.250"
+    },
+    {
+        "name": "สำราญ",
+        "en_name": "Samran",
+        "class": "4",
+        "id": "2166",
+        "t_flag": "0",
+        "km": "460.710"
+    },
+    {
+        "name": "นาชะอัง",
+        "en_name": "Na Cha-ang",
+        "class": "4",
+        "id": "4184",
+        "t_flag": "0",
+        "km": "462.850"
+    },
+    {
+        "name": "คลองมะพลับ",
+        "en_name": "Khlong Maphlap",
+        "class": "4",
+        "id": "1139",
+        "t_flag": "0",
+        "km": "470.270"
+    },
+    {
+        "name": "แสงแดด",
+        "en_name": "Saeng Daet",
+        "class": "4",
+        "id": "4187",
+        "t_flag": "0",
+        "km": "472.540"
+    },
+    {
+        "name": "วังกะพี้",
+        "en_name": "Wang Kaphi",
+        "class": "4",
+        "id": "1148",
+        "t_flag": "0",
+        "km": "476.820"
+    },
+    {
+        "name": "ทุ่งคา",
+        "en_name": "Thung Kha",
+        "class": "4",
+        "id": "4189",
+        "t_flag": "0",
+        "km": "480.910"
+    },
+    {
+        "name": "สวรรคโลก",
+        "en_name": "Sawankhalok",
+        "class": "4",
+        "id": "1143",
+        "t_flag": "0",
+        "km": "487.000"
+    },
+    {
+        "name": "ห้วยเสียว",
+        "en_name": "Huai Sieo",
+        "class": "4",
+        "id": "2174",
+        "t_flag": "0",
+        "km": "489.950"
+    },
+    {
+        "name": "วิสัย",
+        "en_name": "Wisai",
+        "class": "4",
+        "id": "4191",
+        "t_flag": "0",
+        "km": "489.970"
+    },
+    {
+        "name": "บ้านด่าน",
+        "en_name": "Ban Dan",
+        "class": "4",
+        "id": "1154",
+        "t_flag": "0",
+        "km": "497.560"
+    },
+    {
+        "name": "บ้านเนียม",
+        "en_name": "Ban Niam",
+        "class": "4",
+        "id": "2270",
+        "t_flag": "0",
+        "km": "504.000"
+    },
+    {
+        "name": "ปางต้นผึ้ง",
+        "en_name": "Pang Ton Phung",
+        "class": "4",
+        "id": "1157",
+        "t_flag": "0",
+        "km": "509.360"
+    },
+    {
+        "name": "ห้วยไร่",
+        "en_name": "Huai Rai",
+        "class": "4",
+        "id": "1160",
+        "t_flag": "0",
+        "km": "521.480"
+    },
+    {
+        "name": "ควนหินมุ้ย",
+        "en_name": "Khuan Hin Mui",
+        "class": "4",
+        "id": "4201",
+        "t_flag": "0",
+        "km": "526.080"
+    },
+    {
+        "name": "หนองแวง",
+        "en_name": "Nong Waeng",
+        "class": "4",
+        "id": "2277",
+        "t_flag": "0",
+        "km": "527.190"
+    },
+    {
+        "name": "บ้านคล้อ",
+        "en_name": "Ban Khlo",
+        "class": "4",
+        "id": "2279",
+        "t_flag": "0",
+        "km": "534.200"
+    },
+    {
+        "name": "ปากปาน",
+        "en_name": "Pak Pan",
+        "class": "4",
+        "id": "1165",
+        "t_flag": "0",
+        "km": "538.430"
+    },
+    {
+        "name": "คลองขนาน",
+        "en_name": "Khlong Khanan",
+        "class": "4",
+        "id": "4205",
+        "t_flag": "0",
+        "km": "541.030"
+    },
+    {
+        "name": "ห้วยสามพาด",
+        "en_name": "Huai Sam Phat",
+        "class": "4",
+        "id": "2188",
+        "t_flag": "0",
+        "km": "542.750"
+    },
+    {
+        "name": "บ้านดวด",
+        "en_name": "Ban Duat",
+        "class": "4",
+        "id": "4210",
+        "t_flag": "0",
+        "km": "560.140"
+    },
+    {
+        "name": "บุ่งหวาย",
+        "en_name": "Bung Wai",
+        "class": "4",
+        "id": "2288",
+        "t_flag": "0",
+        "km": "566.200"
+    },
+    {
+        "name": "ดอนธูป",
+        "en_name": "Don Thup",
+        "class": "4",
+        "id": "4213",
+        "t_flag": "0",
+        "km": "570.050"
+    },
+    {
+        "name": "ผาคัน",
+        "en_name": "Pha Khan",
+        "class": "4",
+        "id": "1176",
+        "t_flag": "0",
+        "km": "578.460"
+    },
+    {
+        "name": "เขาพนมแบก",
+        "en_name": "Khao Phanom Baek",
+        "class": "4",
+        "id": "4218",
+        "t_flag": "0",
+        "km": "588.400"
+    },
+    {
+        "name": "ปางป๋วย",
+        "en_name": "Pang Puai",
+        "class": "4",
+        "id": "1180",
+        "t_flag": "0",
+        "km": "591.070"
+    },
+    {
+        "name": "นาพู่",
+        "en_name": "Na Phu",
+        "class": "4",
+        "id": "2201",
+        "t_flag": "0",
+        "km": "593.000"
+    },
+    {
+        "name": "แม่จาง",
+        "en_name": "Mae Chang",
+        "class": "4",
+        "id": "1182",
+        "t_flag": "0",
+        "km": "600.330"
+    },
+    {
+        "name": "นาทา",
+        "en_name": "Na Tha",
+        "class": "4",
+        "id": "2207",
+        "t_flag": "0",
+        "km": "617.840"
+    },
+    {
+        "name": "คลองไทร",
+        "en_name": "Khlong Sai",
+        "class": "4",
+        "id": "4226",
+        "t_flag": "0",
+        "km": "618.870"
+    },
+    {
+        "name": "ศาลาผาลาด",
+        "en_name": "Sala Pha Lat",
+        "class": "4",
+        "id": "1187",
+        "t_flag": "0",
+        "km": "622.200"
+    },
+    {
+        "name": "เขาพลู",
+        "en_name": "Khao Phlu",
+        "class": "4",
+        "id": "4245",
+        "t_flag": "0",
+        "km": "652.460"
+    },
+    {
+        "name": "ปางม่วง",
+        "en_name": "Pang Muang",
+        "class": "4",
+        "id": "1198",
+        "t_flag": "0",
+        "km": "660.980"
+    },
+    {
+        "name": "คีรีรัฐนิคม",
+        "en_name": "Khiri Ratthanikhom",
+        "class": "4",
+        "id": "4238",
+        "t_flag": "0",
+        "km": "662.000"
+    },
+    {
+        "name": "ห้วยมุด",
+        "en_name": "Huai Mut",
+        "class": "4",
+        "id": "4249",
+        "t_flag": "0",
+        "km": "669.680"
+    },
+    {
+        "name": "พรุพี",
+        "en_name": "Phruphi",
+        "class": "4",
+        "id": "4253",
+        "t_flag": "0",
+        "km": "684.030"
+    },
+    {
+        "name": "บ้านพรุกระแชง",
+        "en_name": "Ban Phru Krachaeng",
+        "class": "4",
+        "id": "4257",
+        "t_flag": "0",
+        "km": "699.780"
+    },
+    {
+        "name": "ห้วยปริก",
+        "en_name": "Huai Prik",
+        "class": "4",
+        "id": "4258",
+        "t_flag": "0",
+        "km": "704.610"
+    },
+    {
+        "name": "กระเบียด",
+        "en_name": "Krabiat",
+        "class": "4",
+        "id": "4259",
+        "t_flag": "0",
+        "km": "709.870"
+    },
+    {
+        "name": "ป่าเส้า",
+        "en_name": "Pa Sao",
+        "class": "4",
+        "id": "1218",
+        "t_flag": "0",
+        "km": "734.640"
+    },
+    {
+        "name": "หลักช้าง",
+        "en_name": "Lak Chang",
+        "class": "4",
+        "id": "4266",
+        "t_flag": "0",
+        "km": "734.710"
+    },
+    {
+        "name": "คลองจัง",
+        "en_name": "Khlong Chang",
+        "class": "4",
+        "id": "4269",
+        "t_flag": "0",
+        "km": "747.030"
+    },
+    {
+        "name": "ใสใหญ่",
+        "en_name": "Sai Yai",
+        "class": "4",
+        "id": "4295",
+        "t_flag": "0",
+        "km": "762.000"
+    },
+    {
+        "name": "ที่วัง",
+        "en_name": "Thi Wang",
+        "class": "4",
+        "id": "4272",
+        "t_flag": "0",
+        "km": "765.570"
+    },
+    {
+        "name": "ควนหนองคว้า",
+        "en_name": "Khuan Nong Khwa",
+        "class": "4",
+        "id": "4310",
+        "t_flag": "0",
+        "km": "789.380"
+    },
+    {
+        "name": "บ้านทุ่งหล่อ",
+        "en_name": "Ban Thung Lo",
+        "class": "4",
+        "id": "4302",
+        "t_flag": "0",
+        "km": "790.590"
+    },
+    {
+        "name": "โคกคราม",
+        "en_name": "Khok Khram",
+        "class": "4",
+        "id": "4303",
+        "t_flag": "0",
+        "km": "794.670"
+    },
+    {
+        "name": "บ้านตูล",
+        "en_name": "Ban Tun",
+        "class": "4",
+        "id": "4312",
+        "t_flag": "0",
+        "km": "794.940"
+    },
+    {
+        "name": "บ้านนางหลง",
+        "en_name": "Ban Nang Long",
+        "class": "4",
+        "id": "4317",
+        "t_flag": "0",
+        "km": "813.470"
+    },
+    {
+        "name": "บ้านขอนหาด",
+        "en_name": "Ban Khon Hat",
+        "class": "4",
+        "id": "4318",
+        "t_flag": "0",
+        "km": "818.950"
+    },
+    {
+        "name": "แหลมโตนด",
+        "en_name": "Laem Tanot",
+        "class": "4",
+        "id": "4319",
+        "t_flag": "0",
+        "km": "824.060"
+    },
+    {
+        "name": "บ้านต้นโดน",
+        "en_name": "Ban Ton Don",
+        "class": "4",
+        "id": "4328",
+        "t_flag": "0",
+        "km": "856.280"
+    },
+    {
+        "name": "ควนเคี่ยม",
+        "en_name": "Khuan Khiam",
+        "class": "4",
+        "id": "4334",
+        "t_flag": "0",
+        "km": "881.150"
+    },
+    {
+        "name": "โคกทราย",
+        "en_name": "Khok Sai",
+        "class": "4",
+        "id": "4338",
+        "t_flag": "0",
+        "km": "896.240"
+    },
+    {
+        "name": "บ้านเกาะใหญ่",
+        "en_name": "Ban Ko Yai",
+        "class": "4",
+        "id": "4342",
+        "t_flag": "0",
+        "km": "909.500"
+    },
+    {
+        "name": "บ้านดินลาน",
+        "en_name": "Ban Din Lan",
+        "class": "4",
+        "id": "4345",
+        "t_flag": "0",
+        "km": "921.840"
+    },
+    {
+        "name": "วัดควนมีด",
+        "en_name": "Wat Khuan Mit",
+        "class": "4",
+        "id": "4381",
+        "t_flag": "0",
+        "km": "953.750"
+    },
+    {
+        "name": "ท่าแมงลัก",
+        "en_name": "Tha Maenglak",
+        "class": "4",
+        "id": "4386",
+        "t_flag": "0",
+        "km": "972.100"
+    },
+    {
+        "name": "เกาะสะบ้า",
+        "en_name": "Ko Saba",
+        "class": "4",
+        "id": "4388",
+        "t_flag": "0",
+        "km": "980.790"
+    },
+    {
+        "name": "ปาดังเบซาร์ (ไทย)",
+        "en_name": "Padang Besar (Thai)",
+        "class": "4",
+        "id": "4373",
+        "t_flag": "0",
+        "km": "988.950"
+    },
+    {
+        "name": "ตาแปด",
+        "en_name": "Ta Paet",
+        "class": "4",
+        "id": "4393",
+        "t_flag": "0",
+        "km": "999.910"
+    },
+    {
+        "name": "วัดช้างให้",
+        "en_name": "Wat Chang Hai",
+        "class": "4",
+        "id": "4437",
+        "t_flag": "0",
+        "km": "1020.090"
+    },
+    {
+        "name": "คลองทราย",
+        "en_name": "Khlong Sai",
+        "class": "4",
+        "id": "4399",
+        "t_flag": "0",
+        "km": "1026.070"
+    },
+    {
+        "name": "ตาเซะ",
+        "en_name": "Tase",
+        "class": "4",
+        "id": "4400",
+        "t_flag": "0",
+        "km": "1031.590"
+    },
+    {
+        "name": "ไม้แก่น",
+        "en_name": "Mai Kaen",
+        "class": "4",
+        "id": "4405",
+        "t_flag": "0",
+        "km": "1048.800"
+    },
+    {
+        "name": "บาลอ",
+        "en_name": "Balo",
+        "class": "4",
+        "id": "4409",
+        "t_flag": "0",
+        "km": "1061.700"
+    },
+    {
+        "name": "ลาโละ",
+        "en_name": "Lalo",
+        "class": "4",
+        "id": "4414",
+        "t_flag": "0",
+        "km": "1081.770"
+    },
+    {
+        "name": "ป่าไผ่",
+        "en_name": "Pa Phai",
+        "class": "4",
+        "id": "4421",
+        "t_flag": "0",
+        "km": "1105.450"
+    },
+    {
+        "name": "บูกิต",
+        "en_name": "Bukit",
+        "class": "4",
+        "id": "4424",
+        "t_flag": "0",
+        "km": "1115.830"
+    },
+    {
+        "name": "โต๊ะเด็ง",
+        "en_name": "To Deng",
+        "class": "4",
+        "id": "4427",
+        "t_flag": "0",
+        "km": "1125.650"
+    },
+    {
+        "name": "ท่านาแล้ง",
+        "en_name": "Thanalaeng",
+        "class": "88",
+        "id": "7201",
+        "t_flag": "0",
+        "km": "627.250"
+    },
+    {
+        "name": "เวียงจันทน์ (คำสะหวาด)",
+        "en_name": "Vientiane (Khamsavath)",
+        "class": "88",
+        "id": "7203",
+        "t_flag": "0",
+        "km": "635.060"
+    },
+    {
+        "name": "โรงพยาบาลนครท่าฉลอม",
+        "en_name": "Nakhon Tha Chalom",
+        "class": "98",
+        "id": "5038",
+        "t_flag": "0",
+        "km": ".560"
+    },
+    {
+        "name": "ท่าฉลอม",
+        "en_name": "Tha Chalom",
+        "class": "98",
+        "id": "5020",
+        "t_flag": "0",
+        "km": ".840"
+    },
+    {
+        "name": "วุฒากาศ",
+        "en_name": "Wutthakat",
+        "class": "98",
+        "id": "5002",
+        "t_flag": "0",
+        "km": "2.500"
+    },
+    {
+        "name": "คลองต้นไทร",
+        "en_name": "Khlong Ton Sai",
+        "class": "98",
+        "id": "5004",
+        "t_flag": "0",
+        "km": "3.350"
+    },
+    {
+        "name": "รพ.รามาธิบดี",
+        "en_name": "Ramathibodi Hospital",
+        "class": "98",
+        "id": "1232",
+        "t_flag": "0",
+        "km": "3.460"
+    },
+    {
+        "name": "บางระมาด",
+        "en_name": "Bang Ramat",
+        "class": "98",
+        "id": "4003",
+        "t_flag": "0",
+        "km": "4.290"
+    },
+    {
+        "name": "บางสีคต",
+        "en_name": "Bang Si Khot",
+        "class": "98",
+        "id": "5022",
+        "t_flag": "0",
+        "km": "6.720"
+    },
+    {
+        "name": "บ้านฉิมพลี",
+        "en_name": "Banchimphli",
+        "class": "98",
+        "id": "4007",
+        "t_flag": "0",
+        "km": "8.640"
+    },
+    {
+        "name": "บางกระเจ้า",
+        "en_name": "Bang Krachao",
+        "class": "98",
+        "id": "5023",
+        "t_flag": "0",
+        "km": "8.680"
+    },
+    {
+        "name": "บางบอน",
+        "en_name": "Bang Bon",
+        "class": "98",
+        "id": "5009",
+        "t_flag": "0",
+        "km": "9.760"
+    },
+    {
+        "name": "การเคหะ",
+        "en_name": "Khan Keha",
+        "class": "98",
+        "id": "5010",
+        "t_flag": "0",
+        "km": "10.230"
+    },
+    {
+        "name": "บ้านบ่อ",
+        "en_name": "Ban Bo",
+        "class": "98",
+        "id": "5024",
+        "t_flag": "0",
+        "km": "10.720"
+    },
+    {
+        "name": "พุทธมณฑล สาย 2",
+        "en_name": "Phuttamonthon Sai 2",
+        "class": "98",
+        "id": "4442",
+        "t_flag": "0",
+        "km": "11.470"
+    },
+    {
+        "name": "บางซ่อน",
+        "en_name": "Bang Son",
+        "class": "98",
+        "id": "4006",
+        "t_flag": "0",
+        "km": "12.900"
+    },
+    {
+        "name": "บางโทรัด",
+        "en_name": "Bang Thorat",
+        "class": "98",
+        "id": "5025",
+        "t_flag": "0",
+        "km": "13.640"
+    },
+    {
+        "name": "บ้านกาหลง",
+        "en_name": "Ban Ka Long",
+        "class": "98",
+        "id": "5026",
+        "t_flag": "0",
+        "km": "15.600"
+    },
+    {
+        "name": "พรมแดน",
+        "en_name": "Phrom Daen",
+        "class": "98",
+        "id": "5014",
+        "t_flag": "0",
+        "km": "17.290"
+    },
+    {
+        "name": "บ้านนาขวาง",
+        "en_name": "Ban Na Khwang",
+        "class": "98",
+        "id": "5027",
+        "t_flag": "0",
+        "km": "17.760"
+    },
+    {
+        "name": "บ้านนาโคก",
+        "en_name": "Ban Na Khok",
+        "class": "98",
+        "id": "5028",
+        "t_flag": "0",
+        "km": "19.790"
+    },
+    {
+        "name": "บางน้ำจืด",
+        "en_name": "Bang Nam Jued",
+        "class": "98",
+        "id": "5015",
+        "t_flag": "0",
+        "km": "19.970"
+    },
+    {
+        "name": "คอกควาย",
+        "en_name": "Khok Khwai",
+        "class": "98",
+        "id": "5016",
+        "t_flag": "0",
+        "km": "22.990"
+    },
+    {
+        "name": "บ้านขอม",
+        "en_name": "Ban Khom",
+        "class": "98",
+        "id": "5017",
+        "t_flag": "0",
+        "km": "26.760"
+    },
+    {
+        "name": "คลองมหาสวัสดิ์",
+        "en_name": "Khlong Maha Sawat",
+        "class": "98",
+        "id": "4011",
+        "t_flag": "0",
+        "km": "27.050"
+    },
+    {
+        "name": "บางกระบูน",
+        "en_name": "Bang Krabun",
+        "class": "98",
+        "id": "5031",
+        "t_flag": "0",
+        "km": "29.980"
+    },
+    {
+        "name": "นิคมรถไฟมหาชัย",
+        "en_name": "Nikom Rot Fai Maha Chai",
+        "class": "98",
+        "id": "5037",
+        "t_flag": "0",
+        "km": "30.600"
+    },
+    {
+        "name": "ม.ธรรมศาสตร์",
+        "en_name": "Thammasat University",
+        "class": "98",
+        "id": "1230",
+        "t_flag": "0",
+        "km": "40.190"
+    },
+    {
+        "name": "นวนคร",
+        "en_name": "Nava Nakhon",
+        "class": "98",
+        "id": "1023",
+        "t_flag": "0",
+        "km": "44.110"
+    },
+    {
+        "name": "พระราชวังสนามจันทร์",
+        "en_name": "Sanam Chandra Palace",
+        "class": "98",
+        "id": "4017",
+        "t_flag": "0",
+        "km": "50.130"
+    },
+    {
+        "name": "แปดริ้ว",
+        "en_name": "Paet Riu",
+        "class": "98",
+        "id": "3025",
+        "t_flag": "0",
+        "km": "62.870"
+    },
+    {
+        "name": "ยางประสาท",
+        "en_name": "Yang Prasat",
+        "class": "98",
+        "id": "4022",
+        "t_flag": "0",
+        "km": "71.600"
+    },
+    {
+        "name": "โพรงอากาศ",
+        "en_name": "Phrong Akat",
+        "class": "98",
+        "id": "3053",
+        "t_flag": "0",
+        "km": "74.530"
+    },
+    {
+        "name": "ดอนขุนวิเศษ",
+        "en_name": "Don Khun Wiset",
+        "class": "98",
+        "id": "4024",
+        "t_flag": "0",
+        "km": "80.500"
+    },
+    {
+        "name": "กำแพงแสน",
+        "en_name": "Kamphaeng Saen",
+        "class": "98",
+        "id": "4025",
+        "t_flag": "0",
+        "km": "85.300"
+    },
+    {
+        "name": "คลองยี่สิบเอ็ด",
+        "en_name": "Khlong Yi Sip Et",
+        "class": "98",
+        "id": "3058",
+        "t_flag": "0",
+        "km": "89.420"
+    },
+    {
+        "name": "หนองฟัก",
+        "en_name": "Nong Fak",
+        "class": "98",
+        "id": "4027",
+        "t_flag": "0",
+        "km": "93.000"
+    },
+    {
+        "name": "โรงเรียนการบิน",
+        "en_name": "Rong Rien Kanbin",
+        "class": "98",
+        "id": "4028",
+        "t_flag": "0",
+        "km": "96.470"
+    },
+    {
+        "name": "บ้านหนองเสือ",
+        "en_name": "Ban Nong Sua",
+        "class": "98",
+        "id": "4050",
+        "t_flag": "0",
+        "km": "96.680"
+    },
+    {
+        "name": "บ้านปลักแรด",
+        "en_name": "Ban Plug Rad",
+        "class": "98",
+        "id": "1038",
+        "t_flag": "0",
+        "km": "99.160"
+    },
+    {
+        "name": "ทุ่งทอง",
+        "en_name": "Thung Thong",
+        "class": "98",
+        "id": "4052",
+        "t_flag": "0",
+        "km": "102.710"
+    },
+    {
+        "name": "หนองวัลย์เปรียง",
+        "en_name": "Nong Wan Priang",
+        "class": "98",
+        "id": "4031",
+        "t_flag": "0",
+        "km": "104.970"
+    },
+    {
+        "name": "หนองน้ำขาว",
+        "en_name": "Nong Nam Khao",
+        "class": "98",
+        "id": "3063",
+        "t_flag": "0",
+        "km": "109.490"
+    },
+    {
+        "name": "ศรีสำราญ",
+        "en_name": "Sri Samran",
+        "class": "98",
+        "id": "4033",
+        "t_flag": "0",
+        "km": "113.300"
+    },
+    {
+        "name": "ปากแพรก",
+        "en_name": "Pak Phraek",
+        "class": "98",
+        "id": "4055",
+        "t_flag": "0",
+        "km": "114.360"
+    },
+    {
+        "name": "แสนสุข",
+        "en_name": "Saen Sook",
+        "class": "98",
+        "id": "3033",
+        "t_flag": "0",
+        "km": "114.460"
+    },
+    {
+        "name": "บ้านป่าไก่",
+        "en_name": "Ban Pa Kai",
+        "class": "98",
+        "id": "4092",
+        "t_flag": "0",
+        "km": "114.500"
+    },
+    {
+        "name": "ดอนสงวน",
+        "en_name": "Don Sa-nguan",
+        "class": "98",
+        "id": "4035",
+        "t_flag": "0",
+        "km": "118.970"
+    },
+    {
+        "name": "ห้วยโรง",
+        "en_name": "Huai Rong",
+        "class": "98",
+        "id": "4094",
+        "t_flag": "0",
+        "km": "122.780"
+    },
+    {
+        "name": "เขาปูน",
+        "en_name": "Khao Pun",
+        "class": "98",
+        "id": "4059",
+        "t_flag": "0",
+        "km": "124.520"
+    },
+    {
+        "name": "เขาพระบาท",
+        "en_name": "Khao Phrabat",
+        "class": "98",
+        "id": "3035",
+        "t_flag": "0",
+        "km": "125.350"
+    },
+    {
+        "name": "หนองผักชี",
+        "en_name": "Nong Phakchi",
+        "class": "98",
+        "id": "4037",
+        "t_flag": "0",
+        "km": "125.500"
+    },
+    {
+        "name": "ทับกวาง",
+        "en_name": "Thap Kwang",
+        "class": "98",
+        "id": "2081",
+        "t_flag": "0",
+        "km": "131.240"
+    },
+    {
+        "name": "บ้านมะขามล้ม",
+        "en_name": "Ban Makham Lom",
+        "class": "98",
+        "id": "4039",
+        "t_flag": "0",
+        "km": "131.350"
+    },
+    {
+        "name": "วังลาน",
+        "en_name": "Wang Lan",
+        "class": "98",
+        "id": "4061",
+        "t_flag": "0",
+        "km": "132.700"
+    },
+    {
+        "name": "เขาคอก",
+        "en_name": "Khao Khok",
+        "class": "98",
+        "id": "2013",
+        "t_flag": "0",
+        "km": "134.370"
+    },
+    {
+        "name": "สะแกย่างหมู",
+        "en_name": "Sakae Yang Mu",
+        "class": "98",
+        "id": "4040",
+        "t_flag": "0",
+        "km": "135.350"
+    },
+    {
+        "name": "นากาญจน์",
+        "en_name": "Na Kan",
+        "class": "98",
+        "id": "4062",
+        "t_flag": "0",
+        "km": "136.460"
+    },
+    {
+        "name": "เขาหินดาด",
+        "en_name": "Khao Hin Dat",
+        "class": "98",
+        "id": "2015",
+        "t_flag": "0",
+        "km": "141.850"
+    },
+    {
+        "name": "วังตะเคียน",
+        "en_name": "Wang Takhian",
+        "class": "98",
+        "id": "4064",
+        "t_flag": "0",
+        "km": "144.800"
+    },
+    {
+        "name": "หนองศรีวิชัย",
+        "en_name": "Nong Sri Vichai",
+        "class": "98",
+        "id": "3125",
+        "t_flag": "0",
+        "km": "148.960"
+    },
+    {
+        "name": "บ้านพรหมแสง",
+        "en_name": "Ban Phrom Saeng",
+        "class": "98",
+        "id": "3073",
+        "t_flag": "0",
+        "km": "151.850"
+    },
+    {
+        "name": "บ้านเก่า",
+        "en_name": "Ban Kao",
+        "class": "98",
+        "id": "4066",
+        "t_flag": "0",
+        "km": "151.950"
+    },
+    {
+        "name": "เขาสูง",
+        "en_name": "Khao Sung",
+        "class": "98",
+        "id": "2018",
+        "t_flag": "0",
+        "km": "152.300"
+    },
+    {
+        "name": "ท่าตาเสือ",
+        "en_name": "Tha Ta Sua",
+        "class": "98",
+        "id": "4067",
+        "t_flag": "0",
+        "km": "156.800"
+    },
+    {
+        "name": "พัทยาใต้",
+        "en_name": "Pattaya Tai",
+        "class": "98",
+        "id": "3042",
+        "t_flag": "0",
+        "km": "158.520"
+    },
+    {
+        "name": "เขื่อนป่าสักชลสิทธิ์",
+        "en_name": "Pa Sak Jolasid Dam",
+        "class": "98",
+        "id": "2301",
+        "t_flag": "0",
+        "km": "162.380"
+    },
+    {
+        "name": "ตลาดน้ำ 4 ภาค",
+        "en_name": "Talat Nam 4 Phak",
+        "class": "98",
+        "id": "3124",
+        "t_flag": "0",
+        "km": "163.000"
+    },
+    {
+        "name": "กบินทร์เก่า",
+        "en_name": "Kabin Kao",
+        "class": "98",
+        "id": "3076",
+        "t_flag": "0",
+        "km": "165.500"
+    },
+    {
+        "name": "ห้วยแก้ว",
+        "en_name": "Huai Kaeo",
+        "class": "98",
+        "id": "1059",
+        "t_flag": "0",
+        "km": "165.940"
+    },
+    {
+        "name": "บ้านหนองบัว",
+        "en_name": "Ban Nong Bua",
+        "class": "98",
+        "id": "2022",
+        "t_flag": "0",
+        "km": "165.960"
+    },
+    {
+        "name": "วังสิงห์",
+        "en_name": "Wang Sing",
+        "class": "98",
+        "id": "4070",
+        "t_flag": "0",
+        "km": "167.030"
+    },
+    {
+        "name": "ไผ่ใหญ่",
+        "en_name": "Phai Yai",
+        "class": "98",
+        "id": "1060",
+        "t_flag": "0",
+        "km": "170.330"
+    },
+    {
+        "name": "ญาณสังวราราม",
+        "en_name": "Yanasangwararam",
+        "class": "98",
+        "id": "3123",
+        "t_flag": "0",
+        "km": "171.100"
+    },
+    {
+        "name": "ลุ่มสุ่ม",
+        "en_name": "Lumsum",
+        "class": "98",
+        "id": "4071",
+        "t_flag": "0",
+        "km": "172.350"
+    },
+    {
+        "name": "สวนนงนุช",
+        "en_name": "Suan Nong Nuch",
+        "class": "98",
+        "id": "3044",
+        "t_flag": "0",
+        "km": "174.090"
+    },
+    {
+        "name": "เกาะมหามงคล",
+        "en_name": "Ko Maha Mongkol",
+        "class": "98",
+        "id": "4074",
+        "t_flag": "0",
+        "km": "183.660"
+    },
+    {
+        "name": "พระปรง",
+        "en_name": "Phra Prong",
+        "class": "98",
+        "id": "3081",
+        "t_flag": "0",
+        "km": "183.760"
+    },
+    {
+        "name": "ช่องแคบ",
+        "en_name": "Chong Khaep",
+        "class": "98",
+        "id": "4075",
+        "t_flag": "0",
+        "km": "185.350"
+    },
+    {
+        "name": "ทะเลหว้า",
+        "en_name": "Thale Wa",
+        "class": "98",
+        "id": "1065",
+        "t_flag": "0",
+        "km": "187.370"
+    },
+    {
+        "name": "วังใหญ่",
+        "en_name": "Wang Yai",
+        "class": "98",
+        "id": "4076",
+        "t_flag": "0",
+        "km": "188.900"
+    },
+    {
+        "name": "โรงเรียนอัสสัมชัญคอนแวนต์",
+        "en_name": "Assumption Convent School",
+        "class": "98",
+        "id": "2028",
+        "t_flag": "0",
+        "km": "193.940"
+    },
+    {
+        "name": "ศาลาลำดวน",
+        "en_name": "Sala Lamduan",
+        "class": "98",
+        "id": "3085",
+        "t_flag": "0",
+        "km": "195.870"
+    },
+    {
+        "name": "เขายายกะตา",
+        "en_name": "Khao Yai Ka Ta",
+        "class": "98",
+        "id": "2030",
+        "t_flag": "0",
+        "km": "198.950"
+    },
+    {
+        "name": "ตลาดลำนารายณ์",
+        "en_name": "Talat Lam Narai",
+        "class": "98",
+        "id": "2032",
+        "t_flag": "0",
+        "km": "207.380"
+    },
+    {
+        "name": "ศูนย์ราชการจังหวัดสระแก้ว",
+        "en_name": "Sa Kaeo Government Center",
+        "class": "98",
+        "id": "3088",
+        "t_flag": "0",
+        "km": "212.938"
+    },
+    {
+        "name": "ท่าเกษม",
+        "en_name": "Tha Kasem",
+        "class": "98",
+        "id": "3090",
+        "t_flag": "0",
+        "km": "216.280"
+    },
+    {
+        "name": "บ้านเกาะรัง",
+        "en_name": "Ban Ko Rang",
+        "class": "98",
+        "id": "2036",
+        "t_flag": "0",
+        "km": "220.350"
+    },
+    {
+        "name": "ห้วยโจด",
+        "en_name": "Huai Chot",
+        "class": "98",
+        "id": "3092",
+        "t_flag": "0",
+        "km": "223.400"
+    },
+    {
+        "name": "โคกสะอาด",
+        "en_name": "Khok Sa-at",
+        "class": "98",
+        "id": "2106",
+        "t_flag": "0",
+        "km": "228.990"
+    },
+    {
+        "name": "บ้านจงโก",
+        "en_name": "Ban Chongko",
+        "class": "98",
+        "id": "2041",
+        "t_flag": "0",
+        "km": "236.650"
+    },
+    {
+        "name": "บ้านโป่งคอม",
+        "en_name": "Ban Pong Kom",
+        "class": "98",
+        "id": "3096",
+        "t_flag": "0",
+        "km": "240.320"
+    },
+    {
+        "name": "ห้วยขวาง",
+        "en_name": "Huai Khwang",
+        "class": "98",
+        "id": "4125",
+        "t_flag": "0",
+        "km": "242.251"
+    },
+    {
+        "name": "ห้วยเดื่อ",
+        "en_name": "Huai Dua",
+        "class": "98",
+        "id": "3097",
+        "t_flag": "0",
+        "km": "245.030"
+    },
+    {
+        "name": "บ้านปากจาบ",
+        "en_name": "Ban Pak Chap",
+        "class": "98",
+        "id": "2054",
+        "t_flag": "0",
+        "km": "279.970"
+    },
+    {
+        "name": "บ้านพระพุทธ",
+        "en_name": "Ban Phra Phut",
+        "class": "98",
+        "id": "2212",
+        "t_flag": "0",
+        "km": "280.100"
+    },
+    {
+        "name": "หนองไข่น้ำ",
+        "en_name": "Nong Khai Nam",
+        "class": "98",
+        "id": "2119",
+        "t_flag": "0",
+        "km": "282.920"
+    },
+    {
+        "name": "วังกะอาม",
+        "en_name": "Wang Ka-am",
+        "class": "98",
+        "id": "2059",
+        "t_flag": "0",
+        "km": "297.300"
+    },
+    {
+        "name": "โนนคร้อ",
+        "en_name": "Non Khro",
+        "class": "98",
+        "id": "2060",
+        "t_flag": "0",
+        "km": "302.100"
+    },
+    {
+        "name": "หนองหิน",
+        "en_name": "Nong Hin",
+        "class": "98",
+        "id": "4144",
+        "t_flag": "0",
+        "km": "310.250"
+    },
+    {
+        "name": "เนินถั่วแปบ",
+        "en_name": "Noen Thua Paep",
+        "class": "98",
+        "id": "2127",
+        "t_flag": "0",
+        "km": "311.380"
+    },
+    {
+        "name": "หว้ากอ",
+        "en_name": "Whagor",
+        "class": "98",
+        "id": "4145",
+        "t_flag": "0",
+        "km": "313.420"
+    },
+    {
+        "name": "บ้านตาเนิน",
+        "en_name": "Ban Ta Noen",
+        "class": "98",
+        "id": "2068",
+        "t_flag": "0",
+        "km": "330.190"
+    },
+    {
+        "name": "บ้านไร่",
+        "en_name": "Ban Rai",
+        "class": "98",
+        "id": "2132",
+        "t_flag": "0",
+        "km": "333.670"
+    },
+    {
+        "name": "บ้านหนองขาม",
+        "en_name": "Ban Nong Kham",
+        "class": "98",
+        "id": "2069",
+        "t_flag": "0",
+        "km": "334.050"
+    },
+    {
+        "name": "ทุ่งประดู่",
+        "en_name": "Thung Pradu",
+        "class": "98",
+        "id": "4152",
+        "t_flag": "0",
+        "km": "338.585"
+    },
+    {
+        "name": "ห้วยระหัด",
+        "en_name": "Huai Rahat",
+        "class": "98",
+        "id": "2135",
+        "t_flag": "0",
+        "km": "342.500"
+    },
+    {
+        "name": "บ้านโคกกระเบื้อง",
+        "en_name": "Ban Khok Krabuang",
+        "class": "98",
+        "id": "2073",
+        "t_flag": "0",
+        "km": "346.160"
+    },
+    {
+        "name": "ดอนทราย",
+        "en_name": "Don Sai",
+        "class": "98",
+        "id": "4154",
+        "t_flag": "0",
+        "km": "346.960"
+    },
+    {
+        "name": "เนินสวัสดิ์",
+        "en_name": "Noen Sawat",
+        "class": "98",
+        "id": "2137",
+        "t_flag": "0",
+        "km": "351.200"
+    },
+    {
+        "name": "บ้านหนองปรือโป่ง",
+        "en_name": "Ban Nong Pru Pong",
+        "class": "98",
+        "id": "2075",
+        "t_flag": "0",
+        "km": "351.830"
+    },
+    {
+        "name": "โคกตาหอม",
+        "en_name": "Khok Ta Hom",
+        "class": "98",
+        "id": "4156",
+        "t_flag": "0",
+        "km": "352.725"
+    },
+    {
+        "name": "บ้านกระพี้",
+        "en_name": "Ban Kraphi",
+        "class": "98",
+        "id": "2303",
+        "t_flag": "0",
+        "km": "358.200"
+    },
+    {
+        "name": "บ้านสระครก",
+        "en_name": "Ban Sa Khrok",
+        "class": "98",
+        "id": "2078",
+        "t_flag": "0",
+        "km": "362.140"
+    },
+    {
+        "name": "ศาลาดิน",
+        "en_name": "Sala Din",
+        "class": "98",
+        "id": "2140",
+        "t_flag": "0",
+        "km": "362.440"
+    },
+    {
+        "name": "หนองมงคล",
+        "en_name": "Nong Mongkhon",
+        "class": "98",
+        "id": "4159",
+        "t_flag": "0",
+        "km": "365.850"
+    },
+    {
+        "name": "บ้านโสกรัง",
+        "en_name": "Ban Sok Rang",
+        "class": "98",
+        "id": "2079",
+        "t_flag": "0",
+        "km": "366.500"
+    },
+    {
+        "name": "บ้านตะโก",
+        "en_name": "Ban Tako",
+        "class": "98",
+        "id": "2237",
+        "t_flag": "0",
+        "km": "380.350"
+    },
+    {
+        "name": "หินกอง",
+        "en_name": "Hin Gong",
+        "class": "98",
+        "id": "4164",
+        "t_flag": "0",
+        "km": "383.450"
+    },
+    {
+        "name": "บ้านทรายทอง",
+        "en_name": "Ban Sai Thong",
+        "class": "98",
+        "id": "4170",
+        "t_flag": "0",
+        "km": "404.111"
+    },
+    {
+        "name": "บ้านทรัพย์สมบูรณ์",
+        "en_name": "Ban Sap Somboon",
+        "class": "98",
+        "id": "4177",
+        "t_flag": "0",
+        "km": "427.502"
+    },
+    {
+        "name": "หนองเม็ก",
+        "en_name": "Nong Mek",
+        "class": "98",
+        "id": "2158",
+        "t_flag": "0",
+        "km": "431.590"
+    },
+    {
+        "name": "กุดกว้าง",
+        "en_name": "Kut Kwang",
+        "class": "98",
+        "id": "2161",
+        "t_flag": "0",
+        "km": "444.060"
+    },
+    {
+        "name": "หนองเนียน",
+        "en_name": "Nong Nian",
+        "class": "98",
+        "id": "4183",
+        "t_flag": "0",
+        "km": "458.380"
+    },
+    {
+        "name": "คลองละมุง",
+        "en_name": "Khlong Lamung",
+        "class": "98",
+        "id": "1138",
+        "t_flag": "0",
+        "km": "466.320"
+    },
+    {
+        "name": "วัดคลองปู",
+        "en_name": "Wat Khlong Pu",
+        "class": "98",
+        "id": "1140",
+        "t_flag": "0",
+        "km": "474.960"
+    },
+    {
+        "name": "คลองยาง",
+        "en_name": "Khlong Yang",
+        "class": "98",
+        "id": "1141",
+        "t_flag": "0",
+        "km": "479.030"
+    },
+    {
+        "name": "บ้านวังชัย",
+        "en_name": "Ban Wang Chai",
+        "class": "98",
+        "id": "2171",
+        "t_flag": "0",
+        "km": "480.450"
+    },
+    {
+        "name": "หนองเรียง",
+        "en_name": "Nong Riang",
+        "class": "98",
+        "id": "1142",
+        "t_flag": "0",
+        "km": "483.080"
+    },
+    {
+        "name": "หนองแคน",
+        "en_name": "Nong Khaen",
+        "class": "98",
+        "id": "2266",
+        "t_flag": "0",
+        "km": "489.040"
+    },
+    {
+        "name": "ท่าเสา",
+        "en_name": "Tha Sao",
+        "class": "98",
+        "id": "1152",
+        "t_flag": "0",
+        "km": "489.350"
+    },
+    {
+        "name": "บ้านครน",
+        "en_name": "Ban Khron",
+        "class": "98",
+        "id": "4192",
+        "t_flag": "0",
+        "km": "495.750"
+    },
+    {
+        "name": "บ้านแต้",
+        "en_name": "Ban Tae",
+        "class": "98",
+        "id": "2268",
+        "t_flag": "0",
+        "km": "498.270"
+    },
+    {
+        "name": "เขาปีบ",
+        "en_name": "Khao Pip",
+        "class": "98",
+        "id": "4197",
+        "t_flag": "0",
+        "km": "512.030"
+    },
+    {
+        "name": "เขาพลึง",
+        "en_name": "Khao Phlung",
+        "class": "98",
+        "id": "1159",
+        "t_flag": "0",
+        "km": "517.020"
+    },
+    {
+        "name": "เฉลิมกาญจนา",
+        "en_name": "Chalerm Kanchana",
+        "class": "98",
+        "id": "2275",
+        "t_flag": "0",
+        "km": "522.280"
+    },
+    {
+        "name": "ท่าทอง",
+        "en_name": "Tha Thong",
+        "class": "98",
+        "id": "4200",
+        "t_flag": "0",
+        "km": "522.350"
+    },
+    {
+        "name": "ไร่เกล็ดดาว",
+        "en_name": "Rai Kled Dao",
+        "class": "98",
+        "id": "1161",
+        "t_flag": "0",
+        "km": "525.600"
+    },
+    {
+        "name": "แม่พวก",
+        "en_name": "Mae Phuak",
+        "class": "98",
+        "id": "1162",
+        "t_flag": "0",
+        "km": "528.220"
+    },
+    {
+        "name": "หัวมาด",
+        "en_name": "Hua Mat",
+        "class": "98",
+        "id": "4206",
+        "t_flag": "0",
+        "km": "546.530"
+    },
+    {
+        "name": "บ้านโนนผึ้ง",
+        "en_name": "Ban Non Phung",
+        "class": "98",
+        "id": "2283",
+        "t_flag": "0",
+        "km": "546.860"
+    },
+    {
+        "name": "ห้วยแม่ต้า",
+        "en_name": "Huai Mae Ta",
+        "class": "98",
+        "id": "1169",
+        "t_flag": "0",
+        "km": "554.420"
+    },
+    {
+        "name": "บ้านถ่อน",
+        "en_name": "Ban Thon",
+        "class": "98",
+        "id": "2286",
+        "t_flag": "0",
+        "km": "557.700"
+    },
+    {
+        "name": "คำกลิ้ง",
+        "en_name": "Kham Kling",
+        "class": "98",
+        "id": "2193",
+        "t_flag": "0",
+        "km": "562.050"
+    },
+    {
+        "name": "หนองตูม",
+        "en_name": "Nong Tum",
+        "class": "98",
+        "id": "2197",
+        "t_flag": "0",
+        "km": "575.750"
+    },
+    {
+        "name": "ผาคอ",
+        "en_name": "Pha Kho",
+        "class": "98",
+        "id": "1177",
+        "t_flag": "0",
+        "km": "581.220"
+    },
+    {
+        "name": "บ้านเกาะมุกข์",
+        "en_name": "Ban Ko Muk",
+        "class": "98",
+        "id": "4217",
+        "t_flag": "0",
+        "km": "584.060"
+    },
+    {
+        "name": "หนองบัวเงิน",
+        "en_name": "Nong Bua Ngoen",
+        "class": "98",
+        "id": "2203",
+        "t_flag": "0",
+        "km": "602.000"
+    },
+    {
+        "name": "คลองขุด",
+        "en_name": "Khlong Khut",
+        "class": "98",
+        "id": "4225",
+        "t_flag": "0",
+        "km": "614.000"
+    },
+    {
+        "name": "ห้วยรากไม้",
+        "en_name": "Huai Rak Mai",
+        "class": "98",
+        "id": "1185",
+        "t_flag": "0",
+        "km": "614.900"
+    },
+    {
+        "name": "บ้านดอนรัก",
+        "en_name": "Ban Don Rak",
+        "class": "98",
+        "id": "4230",
+        "t_flag": "0",
+        "km": "634.350"
+    },
+    {
+        "name": "บ้านทุ่งหลวง",
+        "en_name": "Ban Thung Luang",
+        "class": "98",
+        "id": "4232",
+        "t_flag": "0",
+        "km": "640.750"
+    },
+    {
+        "name": "บ้านขนาย",
+        "en_name": "Ban Khanai",
+        "class": "98",
+        "id": "4233",
+        "t_flag": "0",
+        "km": "644.550"
+    },
+    {
+        "name": "บ่อกรัง",
+        "en_name": "Bo Krang",
+        "class": "98",
+        "id": "4243",
+        "t_flag": "0",
+        "km": "647.230"
+    },
+    {
+        "name": "บ้านดอนเรียบ",
+        "en_name": "Ban Don Riap",
+        "class": "98",
+        "id": "4234",
+        "t_flag": "0",
+        "km": "649.350"
+    },
+    {
+        "name": "คลองยัน",
+        "en_name": "Khlong Yan",
+        "class": "98",
+        "id": "4235",
+        "t_flag": "0",
+        "km": "652.600"
+    },
+    {
+        "name": "เขาหลุง",
+        "en_name": "Khao Lung",
+        "class": "98",
+        "id": "4236",
+        "t_flag": "0",
+        "km": "655.580"
+    },
+    {
+        "name": "คลองยา",
+        "en_name": "Khlong Ya",
+        "class": "98",
+        "id": "4246",
+        "t_flag": "0",
+        "km": "657.760"
+    },
+    {
+        "name": "บ้านยาง",
+        "en_name": "Ban Yang",
+        "class": "98",
+        "id": "4237",
+        "t_flag": "0",
+        "km": "658.000"
+    },
+    {
+        "name": "ห้วยเรียน",
+        "en_name": "Huai Rian",
+        "class": "98",
+        "id": "1199",
+        "t_flag": "0",
+        "km": "665.090"
+    },
+    {
+        "name": "คลองปราบ",
+        "en_name": "Khlong Prap",
+        "class": "98",
+        "id": "4252",
+        "t_flag": "0",
+        "km": "679.900"
+    },
+    {
+        "name": "คลองสูญ",
+        "en_name": "Khlong Sun",
+        "class": "98",
+        "id": "4254",
+        "t_flag": "0",
+        "km": "687.720"
+    },
+    {
+        "name": "พ่อท่านคล้ายวาจาสิทธิ์",
+        "en_name": "Pho Than Klai Wachasit",
+        "class": "98",
+        "id": "4265",
+        "t_flag": "0",
+        "km": "729.000"
+    },
+    {
+        "name": "คลองกุย",
+        "en_name": "Khlong Kui",
+        "class": "98",
+        "id": "4267",
+        "t_flag": "0",
+        "km": "738.980"
+    },
+    {
+        "name": "บ้านเกาะปริง",
+        "en_name": "Ban Ko Pring",
+        "class": "98",
+        "id": "4433",
+        "t_flag": "0",
+        "km": "751.030"
+    },
+    {
+        "name": "กะปาง",
+        "en_name": "Kapang",
+        "class": "98",
+        "id": "4275",
+        "t_flag": "0",
+        "km": "776.330"
+    },
+    {
+        "name": "ควนเมา",
+        "en_name": "Khuan Mao",
+        "class": "98",
+        "id": "4276",
+        "t_flag": "0",
+        "km": "780.970"
+    },
+    {
+        "name": "บ้านเกยเชน",
+        "en_name": "Ban Koei Chen",
+        "class": "98",
+        "id": "4301",
+        "t_flag": "0",
+        "km": "786.150"
+    },
+    {
+        "name": "คลองมวน",
+        "en_name": "Khlong Muan",
+        "class": "98",
+        "id": "4278",
+        "t_flag": "0",
+        "km": "789.490"
+    },
+    {
+        "name": "ยางยวน",
+        "en_name": "Yang Yuan",
+        "class": "98",
+        "id": "4280",
+        "t_flag": "0",
+        "km": "795.430"
+    },
+    {
+        "name": "บ้านทุ่งค่าย",
+        "en_name": "Ban Tungkhai",
+        "class": "98",
+        "id": "4366",
+        "t_flag": "0",
+        "km": "802.850"
+    },
+    {
+        "name": "บ้านท่าช้าง",
+        "en_name": "Ban Tha Chang",
+        "class": "98",
+        "id": "4305",
+        "t_flag": "0",
+        "km": "803.400"
+    },
+    {
+        "name": "วังวัว",
+        "en_name": "Wang Wua",
+        "class": "98",
+        "id": "4306",
+        "t_flag": "0",
+        "km": "806.350"
+    },
+    {
+        "name": "มะม่วงสองต้น",
+        "en_name": "Mamuang Song Ton",
+        "class": "98",
+        "id": "4307",
+        "t_flag": "0",
+        "km": "810.880"
+    },
+    {
+        "name": "ลำภูรา",
+        "en_name": "Lam Phura",
+        "class": "98",
+        "id": "4285",
+        "t_flag": "0",
+        "km": "814.510"
+    },
+    {
+        "name": "บ้านสุนทรา",
+        "en_name": "Ban Suntara",
+        "class": "98",
+        "id": "4320",
+        "t_flag": "0",
+        "km": "828.030"
+    },
+    {
+        "name": "นาป้อ",
+        "en_name": "Na Po",
+        "class": "98",
+        "id": "4290",
+        "t_flag": "0",
+        "km": "832.670"
+    },
+    {
+        "name": "พรุใหญ่",
+        "en_name": "Phru Yai",
+        "class": "98",
+        "id": "4291",
+        "t_flag": "0",
+        "km": "835.860"
+    },
+    {
+        "name": "บ้านมะกอกใต้",
+        "en_name": "Ban Makok Tai",
+        "class": "98",
+        "id": "4323",
+        "t_flag": "0",
+        "km": "837.050"
+    },
+    {
+        "name": "ชัยบุรี",
+        "en_name": "Chai Buri",
+        "class": "98",
+        "id": "4324",
+        "t_flag": "0",
+        "km": "839.970"
+    },
+    {
+        "name": "บ้านป่ากอ",
+        "en_name": "Ban Pa Ko",
+        "class": "98",
+        "id": "4293",
+        "t_flag": "0",
+        "km": "843.250"
+    },
+    {
+        "name": "นาปรือ",
+        "en_name": "Na Pru",
+        "class": "98",
+        "id": "4326",
+        "t_flag": "0",
+        "km": "849.070"
+    },
+    {
+        "name": "ควนพระ",
+        "en_name": "Khuan Phra",
+        "class": "98",
+        "id": "4333",
+        "t_flag": "0",
+        "km": "876.500"
+    },
+    {
+        "name": "บ้านนิคม",
+        "en_name": "Ban Nikhom",
+        "class": "98",
+        "id": "4394",
+        "t_flag": "0",
+        "km": "1003.270"
+    },
+    {
+        "name": "ป่าไร่",
+        "en_name": "Pa Rai",
+        "class": "98",
+        "id": "4398",
+        "t_flag": "0",
+        "km": "1021.290"
+    },
+    {
+        "name": "บ้านยุโป",
+        "en_name": "Ban Yupo",
+        "class": "98",
+        "id": "4401",
+        "t_flag": "0",
+        "km": "1034.880"
+    },
+    {
+        "name": "บ้านปาแต",
+        "en_name": "Ban Patae",
+        "class": "98",
+        "id": "4406",
+        "t_flag": "0",
+        "km": "1051.950"
+    },
+    {
+        "name": "บ้านสะโลว์บูกิ๊ตยือแร",
+        "en_name": "Ban Salo Bukit Yuaerae",
+        "class": "98",
+        "id": "4412",
+        "t_flag": "0",
+        "km": "1075.980"
+    },
+    {
+        "name": "กะแด๊ะ",
+        "en_name": "Kadae",
+        "class": "98",
+        "id": "4417",
+        "t_flag": "0",
+        "km": "1093.960"
+    },
+    {
+        "name": "ไอสะเตีย",
+        "en_name": "Ai Satia",
+        "class": "98",
+        "id": "4425",
+        "t_flag": "0",
+        "km": "1119.620"
+    },
+    {
+        "name": "โคกสยา",
+        "en_name": "Khok Sahya",
+        "class": "98",
+        "id": "4430",
+        "t_flag": "0",
+        "km": "1137.140"
+    },
+    {
+        "name": "จรัลสนิทวงศ์",
+        "en_name": "Jaran Sanitwong",
+        "class": "99",
+        "id": "4434",
+        "t_flag": "0",
+        "km": "1.540"
+    },
+    {
+        "name": "ยมราช",
+        "en_name": "Yommaraj",
+        "class": "99",
+        "id": "1002",
+        "t_flag": "0",
+        "km": "2.170"
+    },
+    {
+        "name": "อุรุพงษ์",
+        "en_name": "Urupong",
+        "class": "99",
+        "id": "3102",
+        "t_flag": "0",
+        "km": "2.770"
+    },
+    {
+        "name": "พญาไท",
+        "en_name": "Phayathai",
+        "class": "99",
+        "id": "3103",
+        "t_flag": "0",
+        "km": "3.670"
+    },
+    {
+        "name": "บ้านชีผ้าขาว",
+        "en_name": "Ban Chi Phakhao",
+        "class": "99",
+        "id": "5021",
+        "t_flag": "0",
+        "km": "3.710"
+    },
+    {
+        "name": "จอมทอง",
+        "en_name": "Chom Thong",
+        "class": "99",
+        "id": "5005",
+        "t_flag": "0",
+        "km": "4.310"
+    },
+    {
+        "name": "ราชปรารภ",
+        "en_name": "Rachaprarop",
+        "class": "99",
+        "id": "3104",
+        "t_flag": "0",
+        "km": "4.590"
+    },
+    {
+        "name": "คลองนกเล็ก",
+        "en_name": "Khlong Nok Lek",
+        "class": "99",
+        "id": "5035",
+        "t_flag": "0",
+        "km": "5.410"
+    },
+    {
+        "name": "วัดไทร",
+        "en_name": "Wat Sai",
+        "class": "99",
+        "id": "5007",
+        "t_flag": "0",
+        "km": "5.760"
+    },
+    {
+        "name": "อโศก",
+        "en_name": "Asoke",
+        "class": "99",
+        "id": "3105",
+        "t_flag": "0",
+        "km": "6.980"
+    },
+    {
+        "name": "รางสะแก",
+        "en_name": "Rang Sakae",
+        "class": "99",
+        "id": "5011",
+        "t_flag": "0",
+        "km": "10.530"
+    },
+    {
+        "name": "สุขุมวิท 71",
+        "en_name": "Sukhumvit 71",
+        "class": "99",
+        "id": "3106",
+        "t_flag": "0",
+        "km": "11.140"
+    },
+    {
+        "name": "สามแยก",
+        "en_name": "Sam Yaek",
+        "class": "99",
+        "id": "5013",
+        "t_flag": "0",
+        "km": "15.830"
+    },
+    {
+        "name": "ทุ่งสีทอง",
+        "en_name": "Thung Si Thong",
+        "class": "99",
+        "id": "5034",
+        "t_flag": "0",
+        "km": "18.760"
+    },
+    {
+        "name": "เขตเมือง",
+        "en_name": "Ked Muang",
+        "class": "99",
+        "id": "5029",
+        "t_flag": "0",
+        "km": "23.550"
+    },
+    {
+        "name": "ซอยวัดลานบุญ",
+        "en_name": "Soi Wat Lan Boon",
+        "class": "99",
+        "id": "3013",
+        "t_flag": "0",
+        "km": "23.860"
+    },
+    {
+        "name": "ลาดใหญ่",
+        "en_name": "Lad Yai",
+        "class": "99",
+        "id": "5030",
+        "t_flag": "0",
+        "km": "27.480"
+    },
+    {
+        "name": "คลองจาก",
+        "en_name": "Khlong Chak",
+        "class": "99",
+        "id": "5033",
+        "t_flag": "0",
+        "km": "29.760"
+    },
+    {
+        "name": "พระจอมเกล้า",
+        "en_name": "Pra Chom Klao",
+        "class": "99",
+        "id": "3107",
+        "t_flag": "0",
+        "km": "30.120"
+    },
+    {
+        "name": "คลองหนึ่ง",
+        "en_name": "Khlong Nhung",
+        "class": "99",
+        "id": "1223",
+        "t_flag": "0",
+        "km": "33.840"
+    },
+    {
+        "name": "คลองอุดมชลจร",
+        "en_name": "Khlong Udom Chonlajorn",
+        "class": "99",
+        "id": "3018",
+        "t_flag": "0",
+        "km": "43.300"
+    },
+    {
+        "name": "คลองแขวงกลั่น",
+        "en_name": "Khlong Kwaeng Klan",
+        "class": "99",
+        "id": "3020",
+        "t_flag": "0",
+        "km": "50.900"
+    },
+    {
+        "name": "บางเตย",
+        "en_name": "Bang Toey",
+        "class": "99",
+        "id": "3022",
+        "t_flag": "0",
+        "km": "56.580"
+    },
+    {
+        "name": "ถนนทรงพล",
+        "en_name": "Tanon Songpol",
+        "class": "99",
+        "id": "4043",
+        "t_flag": "0",
+        "km": "67.900"
+    },
+    {
+        "name": "บ้านดอนกลาง",
+        "en_name": "Ban Don Klang",
+        "class": "99",
+        "id": "1034",
+        "t_flag": "0",
+        "km": "82.310"
+    },
+    {
+        "name": "ทุ่งบัว",
+        "en_name": "Thung Bua",
+        "class": "99",
+        "id": "4026",
+        "t_flag": "0",
+        "km": "87.870"
+    },
+    {
+        "name": "ดอนหญ้านาง",
+        "en_name": "Don Yha Nang",
+        "class": "99",
+        "id": "1224",
+        "t_flag": "0",
+        "km": "93.580"
+    },
+    {
+        "name": "สะพานจุฬาลงกรณ์",
+        "en_name": "Chulalongkorn Bridge",
+        "class": "99",
+        "id": "4088",
+        "t_flag": "0",
+        "km": "100.290"
+    },
+    {
+        "name": "สะพานแควใหญ่",
+        "en_name": "Saphan Kwae Yai",
+        "class": "99",
+        "id": "4058",
+        "t_flag": "0",
+        "km": "120.260"
+    },
+    {
+        "name": "ดอนทอง",
+        "en_name": "Don Thong",
+        "class": "99",
+        "id": "4036",
+        "t_flag": "0",
+        "km": "122.310"
+    },
+    {
+        "name": "หนองกระจับ",
+        "en_name": "Nong Krachap",
+        "class": "99",
+        "id": "3067",
+        "t_flag": "0",
+        "km": "126.250"
+    },
+    {
+        "name": "หนองแสง",
+        "en_name": "Nong Saeng",
+        "class": "99",
+        "id": "3071",
+        "t_flag": "0",
+        "km": "143.410"
+    },
+    {
+        "name": "บ้านโป่งเสี้ยว",
+        "en_name": "Ban Pong Sieo",
+        "class": "99",
+        "id": "4065",
+        "t_flag": "0",
+        "km": "148.170"
+    },
+    {
+        "name": "บ้านเกาะแดง",
+        "en_name": "Ban Ko Daeng",
+        "class": "99",
+        "id": "3074",
+        "t_flag": "0",
+        "km": "156.150"
+    },
+    {
+        "name": "โรงเรียนจันเสน",
+        "en_name": "Rong Rien Chansen",
+        "class": "99",
+        "id": "1229",
+        "t_flag": "0",
+        "km": "172.900"
+    },
+    {
+        "name": "สะพานถ้ำกระแซ",
+        "en_name": "Saphan Tam Krasae",
+        "class": "99",
+        "id": "4072",
+        "t_flag": "0",
+        "km": "173.870"
+    },
+    {
+        "name": "บ้านกกกว้าว",
+        "en_name": "Ban Khok Kwaow",
+        "class": "99",
+        "id": "1062",
+        "t_flag": "0",
+        "km": "176.690"
+    },
+    {
+        "name": "บ้านพุพง",
+        "en_name": "Ban Pu Pong",
+        "class": "99",
+        "id": "4436",
+        "t_flag": "0",
+        "km": "191.250"
+    },
+    {
+        "name": "บ้านหนองกันงา",
+        "en_name": "Ban Nong Gunngar",
+        "class": "99",
+        "id": "2291",
+        "t_flag": "0",
+        "km": "288.130"
+    },
+    {
+        "name": "บ้านกลอย",
+        "en_name": "Ban Kloy",
+        "class": "99",
+        "id": "2058",
+        "t_flag": "0",
+        "km": "293.250"
+    },
+    {
+        "name": "บ้านเก่างิ้ว",
+        "en_name": "Ban Kao Ngiu",
+        "class": "99",
+        "id": "2077",
+        "t_flag": "0",
+        "km": "360.170"
+    },
+    {
+        "name": "คอกช้าง",
+        "en_name": "Khok Chang",
+        "class": "99",
+        "id": "2202",
+        "t_flag": "0",
+        "km": "598.100"
+    },
+    {
+        "name": "บ้านพูน",
+        "en_name": "Ban Poon",
+        "class": "99",
+        "id": "4273",
+        "t_flag": "0",
+        "km": "773.080"
+    },
+    {
+        "name": "บ้านห้วยยูง",
+        "en_name": "Ban Huai Yoong",
+        "class": "99",
+        "id": "4304",
+        "t_flag": "0",
+        "km": "798.720"
+    },
+    {
+        "name": "หนองจิก",
+        "en_name": "Nong Jik",
+        "class": "99",
+        "id": "4316",
+        "t_flag": "0",
+        "km": "810.690"
+    },
+    {
+        "name": "บ้านตรอกแค",
+        "en_name": "Ban Trok Kae",
+        "class": "99",
+        "id": "4435",
+        "t_flag": "0",
+        "km": "816.350"
+    },
+    {
+        "name": "บ้านค่ายไทย",
+        "en_name": "Ban Khai Thai",
+        "class": "99",
+        "id": "4327",
+        "t_flag": "0",
+        "km": "853.190"
+    },
+    {
+        "name": "บ้านห้วยแตน",
+        "en_name": "Ban Huai Tan",
+        "class": "99",
+        "id": "4329",
+        "t_flag": "0",
+        "km": "859.250"
+    },
+    {
+        "name": "หารกง",
+        "en_name": "Han Kong",
+        "class": "99",
+        "id": "4335",
+        "t_flag": "0",
+        "km": "885.350"
+    },
+    {
+        "name": "วัดควนเผยอ",
+        "en_name": "Wat Khuan Phayer",
+        "class": "99",
+        "id": "4337",
+        "t_flag": "0",
+        "km": "893.500"
+    }
+]
