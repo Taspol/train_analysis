@@ -151,7 +151,7 @@ def main():
     st.sidebar.markdown("## Configuration")
     
     all_stations = sorted(df['station_name'].unique())
-    default_stations = ["กรุงเทพอภิวัฒน์", "ชุมทางทุ่งสง"]
+    default_stations = ["ชุมทางทุ่งสง"]
     
     selected_stations = st.sidebar.multiselect(
         "Stations of Interest",
@@ -214,7 +214,7 @@ def main():
     ci_upper = filtered_df['arr_delay'].quantile(0.95)
 
     with m1: custom_metric("Worst Lateness", f"{max_delay:.0f}m")
-    with m2: custom_metric("CI 90% Range", f"{ci_lower:.0f}m to {ci_upper:.0f}m")
+    with m2: custom_metric("CI 90% Range", f"{ci_lower:.0f}m - {ci_upper:.0f}m")
     with m3: custom_metric("Average Delay", f"{avg_delay:.1f}m")
     with m4: custom_metric("Major Delays (>1h)", f"{major_delays_count}")
 
