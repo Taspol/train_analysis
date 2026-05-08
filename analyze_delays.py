@@ -184,7 +184,11 @@ def main():
 
     st.sidebar.markdown("---")
     st.sidebar.markdown("### Information")
-    st.sidebar.info("This tool analyzes historical delay patterns to help you plan your journey with confidence.")
+    st.sidebar.info("""
+        **90% Range**: The window of time where 90% of historical trips arrived (5th to 95th percentile).
+        
+        This tool analyzes historical delay patterns to help you plan your journey with confidence.
+    """)
 
     if not selected_stations:
         st.info("Welcome! Please select one or more stations in the sidebar to visualize performance data.")
@@ -202,12 +206,15 @@ def main():
     m1, m2, m3, m4 = st.columns(4)
     
     max_delay = filtered_df['arr_delay'].max()
-    min_delay = filtered_df['arr_delay'].min()
     avg_delay = filtered_df['arr_delay'].mean()
     major_delays_count = (filtered_df['arr_delay'] > 60).sum()
+    
+    # Calculate 90% Confidence Interval (Percentile based for better practical use)
+    ci_lower = filtered_df['arr_delay'].quantile(0.05)
+    ci_upper = filtered_df['arr_delay'].quantile(0.95)
 
     with m1: custom_metric("Worst Lateness", f"{max_delay:.0f}m")
-    with m2: custom_metric("Best Lateness", f"{min_delay:.0f}m")
+    with m2: custom_metric("CI 90% Range", f"{ci_lower:.0f}m to {ci_upper:.0f}m")
     with m3: custom_metric("Average Delay", f"{avg_delay:.1f}m")
     with m4: custom_metric("Major Delays (>1h)", f"{major_delays_count}")
 
@@ -218,7 +225,7 @@ def main():
     tab_trends, tab_dist, tab_causes = st.tabs([
         "Performance Trends", 
         "Delay Distribution", 
-        "Intelligence Logs"
+        "Reason Logs"
     ])
 
     with tab_trends:
