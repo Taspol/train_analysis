@@ -137,7 +137,7 @@ def main():
     # Hero Section
     st.markdown("""
         <div class="hero-container">
-            <div class="hero-title">Railway Analytics Pro</div>
+            <div class="hero-title">169Railway Analytics</div>
             <p style="color: #64748b; font-size: 1.1rem; font-weight: 300;">Journey reliability intelligence for Thai Railways</p>
         </div>
     """, unsafe_allow_html=True)
