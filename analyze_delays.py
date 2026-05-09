@@ -122,9 +122,14 @@ def load_data(selected_files):
         
     all_dfs = []
     import re
-    for label, file_name in selected_files.items():
-        file_path = f'/Users/Taspol/Documents/sideProject/train_scrape/new/{file_name}'
+    import os
+    for label, file_path in selected_files.items():
         try:
+            # Check if file exists to provide better error feedback
+            if not os.path.exists(file_path):
+                st.error(f"Data file not found: {file_path}. Please ensure it is in the correct directory.")
+                continue
+                
             df = pd.read_csv(file_path)
             df['date'] = pd.to_datetime(df['date'])
             df['arr_delay'] = pd.to_numeric(df['arr_delay'], errors='coerce').fillna(0)
@@ -136,7 +141,7 @@ def load_data(selected_files):
             df['line'] = f"No. {line_num}"
             all_dfs.append(df)
         except Exception as e:
-            st.error(f"Error loading {file_name}: {e}")
+            st.error(f"Error reading {file_path}: {e}")
             
     if not all_dfs:
         return None
