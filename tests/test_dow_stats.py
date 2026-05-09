@@ -32,6 +32,14 @@ class TestComputeDowStats:
         s = dow_stats.compute_dow_stats(df=_make_df(rows))
         assert s.loc["Monday", "p05"] < s.loc["Monday", "p50"] < s.loc["Monday", "p95"]
         assert s.loc["Monday", "median"] == 50
+        assert s.loc["Monday", "min"] == 0
+        assert s.loc["Monday", "max"] == 100
+
+    def test_min_max_bounds(self):
+        rows = [("2026-05-04", -10), ("2026-05-04", 5), ("2026-05-04", 200)]
+        s = dow_stats.compute_dow_stats(_make_df(rows))
+        assert s.loc["Monday", "min"] == -10
+        assert s.loc["Monday", "max"] == 200
 
     def test_on_time_threshold_applies(self):
         rows = [("2026-05-04", 5), ("2026-05-04", 10), ("2026-05-04", 60)]

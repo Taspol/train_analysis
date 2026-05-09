@@ -18,7 +18,7 @@ def compute_dow_stats(df: pd.DataFrame, on_time_threshold: int = 30) -> pd.DataF
     """
     if df.empty:
         return pd.DataFrame(
-            columns=["count", "mean", "median", "p05", "p50", "p95", "on_time_pct"],
+            columns=["count", "mean", "median", "min", "max", "p05", "p50", "p95", "on_time_pct"],
             index=pd.Index(DOW_ORDER, name="day_of_week"),
         )
 
@@ -32,6 +32,8 @@ def compute_dow_stats(df: pd.DataFrame, on_time_threshold: int = 30) -> pd.DataF
             "count": grouped.size(),
             "mean": grouped.mean(),
             "median": grouped.median(),
+            "min": grouped.min(),
+            "max": grouped.max(),
             "p05": grouped.quantile(0.05),
             "p50": grouped.quantile(0.50),
             "p95": grouped.quantile(0.95),
