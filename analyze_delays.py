@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 
 import live_view
+import dow_stats
 
 # Page configuration
 st.set_page_config(
@@ -265,6 +266,100 @@ def main():
             yaxis=dict(showgrid=True, gridcolor='#e2e8f0', title="Minutes")
         )
         st.plotly_chart(fig_line, use_container_width=True)
+
+        st.markdown("---")
+        st.markdown("### Day-of-week breakdown")
+        dow_df = dow_stats.compute_dow_stats(filtered_df, on_time_threshold=delay_threshold)
+
+        if dow_df["count"].fillna(0).sum() == 0:
+            st.info("No rows match the current filters — adjust stations or date range.")
+        else:
+            worst = dow_stats.worst_dow(dow_df, metric="median")
+            best = dow_stats.best_dow(dow_df, metric="median")
+            ranked = dow_df["median"].dropna().sort_values(ascending=False)
+
+            wc1, wc2, wc3 = st.columns(3)
+            wc1.metric(
+                "Worst day (highest median delay)",
+                worst or "—",
+                f"{dow_df.loc[worst,'median']:.1f} min" if worst else "—",
+            )
+            wc2.metric(
+                "Best day (lowest median delay)",
+                best or "—",
+                f"{dow_df.loc[best,'median']:.1f} min" if best else "—",
+            )
+            wc3.metric(
+                f"Best on-time rate (≤{delay_threshold}m)",
+                dow_df["on_time_pct"].idxmax() if dow_df["on_time_pct"].notna().any() else "—",
+                f"{dow_df['on_time_pct'].max():.1f}%" if dow_df["on_time_pct"].notna().any() else "—",
+            )
+
+            quant_long = (
+                dow_df[["mean", "median", "on_time_pct"]]
+                .reset_index()
+                .melt(id_vars="day_of_week", var_name="metric", value_name="value")
+            )
+            fig_dow_bar = px.bar(
+                quant_long[quant_long["metric"].isin(["mean", "median"])],
+                x="day_of_week",
+                y="value",
+                color="metric",
+                barmode="group",
+                category_orders={"day_of_week": dow_stats.DOW_ORDER},
+                labels={"value": "Delay (minutes)", "day_of_week": "Day of week"},
+                template="plotly_white",
+                color_discrete_sequence=["#3b82f6", "#8b5cf6"],
+            )
+            fig_dow_bar.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                font_family="Outfit",
+                margin=dict(l=0, r=0, t=20, b=0),
+                xaxis=dict(showgrid=False, title=""),
+                yaxis=dict(showgrid=True, gridcolor="#e2e8f0"),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            )
+            st.plotly_chart(fig_dow_bar, use_container_width=True)
+
+            quant_df = dow_df[["p05", "p50", "p95"]].dropna().reset_index()
+            quant_long2 = quant_df.melt(
+                id_vars="day_of_week", var_name="quantile", value_name="value"
+            )
+            fig_quant = px.line(
+                quant_long2,
+                x="day_of_week",
+                y="value",
+                color="quantile",
+                markers=True,
+                category_orders={
+                    "day_of_week": dow_stats.DOW_ORDER,
+                    "quantile": ["p05", "p50", "p95"],
+                },
+                labels={"value": "Delay (minutes)", "day_of_week": "Day of week"},
+                template="plotly_white",
+                color_discrete_sequence=["#10b981", "#3b82f6", "#f43f5e"],
+            )
+            fig_quant.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                font_family="Outfit",
+                margin=dict(l=0, r=0, t=20, b=0),
+                xaxis=dict(showgrid=False, title=""),
+                yaxis=dict(showgrid=True, gridcolor="#e2e8f0"),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            )
+            st.plotly_chart(fig_quant, use_container_width=True)
+
+            with st.expander("Worst-day ranking (sorted by median delay)"):
+                rank_df = ranked.reset_index().rename(
+                    columns={"day_of_week": "Day of week", "median": "Median delay (min)"}
+                )
+                rank_df.insert(0, "Rank", range(1, len(rank_df) + 1))
+                st.dataframe(rank_df, use_container_width=True, hide_index=True)
+
+            with st.expander("Full DOW statistics table"):
+                st.dataframe(dow_df.round(2), use_container_width=True)
 
     with tab_dist:
         st.markdown("### Lateness Distribution & Risk Profile")
