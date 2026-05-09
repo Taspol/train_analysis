@@ -4,6 +4,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 
+import live_view
+
 # Page configuration
 st.set_page_config(
     page_title="Train Reliability Intelligence",
@@ -222,11 +224,15 @@ def main():
 
 
     # --- Main Analysis Area ---
-    tab_trends, tab_dist, tab_causes = st.tabs([
-        "Performance Trends", 
-        "Delay Distribution", 
+    tab_live, tab_trends, tab_dist, tab_causes = st.tabs([
+        "Live Status",
+        "Performance Trends",
+        "Delay Distribution",
         "Reason Logs"
     ])
+
+    with tab_live:
+        live_view.render_live_tab()
 
     with tab_trends:
         st.markdown("### Historical performance trends over time")
