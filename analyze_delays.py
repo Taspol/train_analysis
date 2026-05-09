@@ -156,8 +156,8 @@ def main():
     
     # Train Line Selection
     available_lines = {
-        "Train No. 31 (Special Express)": "station_delays_line31.csv",
-        "Train No. 169 (Rapid)": "station_delays_line169.csv"
+        "Train No. 31 (Special Express)": "./extracted_data/station_delays_line31.csv",
+        "Train No. 169 (Rapid)": "./extracted_data/station_delays_line169.csv"
     }
     selected_labels = st.sidebar.multiselect(
         "Select Train Lines to Compare",
