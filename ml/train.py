@@ -27,6 +27,7 @@ DATA_DIR = ROOT / "data"
 MATRIX_PATH = DATA_DIR / "delay_matrix.parquet"
 STATION_ORDER_PATH = DATA_DIR / "station_order.csv"
 RESIDUALS_PATH = DATA_DIR / "ttm_residuals.npy"
+METRICS_PATH = DATA_DIR / "ttm_metrics.json"
 LIVE_MODEL_PATH = DATA_DIR / "live_eta_model.pkl"
 
 CTX = 512
@@ -66,10 +67,13 @@ def build_matrix() -> pd.DataFrame:
 
 def compute_ttm_residuals(mat: pd.DataFrame) -> np.ndarray:
     warnings.filterwarnings("ignore")
+    import json
+
     import torch
     from tsfm_public import TinyTimeMixerForPrediction
 
     arr = mat.values.astype(np.float32)
+    stations = pd.read_csv(STATION_ORDER_PATH).sort_values("idx")["station_name"].tolist()
     model = TinyTimeMixerForPrediction.from_pretrained(
         TTM_MODEL_ID,
         num_input_channels=45,
@@ -91,8 +95,53 @@ def compute_ttm_residuals(mat: pd.DataFrame) -> np.ndarray:
         preds.append(out * std + mean)
         trues.append(target)
 
-    residuals = (np.stack(preds) - np.stack(trues)).reshape(-1)
+    preds_arr = np.stack(preds)
+    trues_arr = np.stack(trues)
+    residuals = (preds_arr - trues_arr).reshape(-1)
     np.save(RESIDUALS_PATH, residuals)
+
+    abs_err = np.abs(preds_arr - trues_arr)
+    baseline = np.repeat(arr[len(arr) - TTM_VAL_DAYS - 1 : len(arr) - HORIZON, None, :], HORIZON, axis=1)
+    base_abs = np.abs(baseline - trues_arr)
+
+    overall = {
+        "ttm_mae_min": float(abs_err.mean()),
+        "ttm_rmse_min": float(np.sqrt(((preds_arr - trues_arr) ** 2).mean())),
+        "persistence_mae_min": float(base_abs.mean()),
+        "persistence_rmse_min": float(np.sqrt(((baseline - trues_arr) ** 2).mean())),
+    }
+    overall["improvement_pct"] = float(
+        (overall["persistence_mae_min"] - overall["ttm_mae_min"])
+        / max(overall["persistence_mae_min"], 1e-6)
+        * 100
+    )
+
+    per_station = []
+    ttm_per = abs_err.mean(axis=(0, 1))
+    base_per = base_abs.mean(axis=(0, 1))
+    for i, name in enumerate(stations):
+        per_station.append(
+            {
+                "idx": i,
+                "station_name": name,
+                "ttm_mae": float(ttm_per[i]),
+                "baseline_mae": float(base_per[i]),
+                "improvement_pct": float(
+                    (base_per[i] - ttm_per[i]) / max(float(base_per[i]), 1e-6) * 100
+                ),
+            }
+        )
+
+    metrics = {
+        "model_id": TTM_MODEL_ID,
+        "mode": "zero-shot",
+        "context_length": CTX,
+        "prediction_horizon": HORIZON,
+        "val_days": TTM_VAL_DAYS,
+        "overall": overall,
+        "per_station": per_station,
+    }
+    METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2))
     return residuals
 
 

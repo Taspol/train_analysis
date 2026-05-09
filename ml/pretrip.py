@@ -22,6 +22,7 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 MATRIX_PATH = DATA_DIR / "delay_matrix.parquet"
 RESIDUALS_PATH = DATA_DIR / "ttm_residuals.npy"
 STATION_ORDER_PATH = DATA_DIR / "station_order.csv"
+METRICS_PATH = DATA_DIR / "ttm_metrics.json"
 
 CTX = 512
 HORIZON = 7
@@ -51,6 +52,15 @@ def _load_station_order() -> pd.DataFrame:
 @lru_cache(maxsize=1)
 def _load_residuals() -> np.ndarray:
     return np.load(RESIDUALS_PATH)
+
+
+@lru_cache(maxsize=1)
+def load_metrics() -> Optional[dict]:
+    if not METRICS_PATH.exists():
+        return None
+    import json
+
+    return json.loads(METRICS_PATH.read_text())
 
 
 @lru_cache(maxsize=1)

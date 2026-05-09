@@ -82,6 +82,37 @@ def _render_pretrip() -> None:
         df = pd.DataFrame({"Station": stations, "Predicted Delay (min)": forecast.round(1)})
         st.dataframe(df, use_container_width=True, hide_index=True)
 
+    metrics = pretrip.load_metrics()
+    if metrics:
+        with st.expander("Model accuracy"):
+            ov = metrics["overall"]
+            st.markdown(
+                f"**Walk-forward validation** &nbsp;·&nbsp; "
+                f"context={metrics['context_length']}d, horizon={metrics['prediction_horizon']}d, "
+                f"val window={metrics['val_days']}d"
+            )
+            mc1, mc2, mc3 = st.columns(3)
+            mc1.metric("TTM MAE (min)", f"{ov['ttm_mae_min']:.2f}",
+                       f"-{ov['persistence_mae_min'] - ov['ttm_mae_min']:.2f} vs persistence",
+                       delta_color="inverse")
+            mc2.metric("TTM RMSE (min)", f"{ov['ttm_rmse_min']:.2f}",
+                       f"-{ov['persistence_rmse_min'] - ov['ttm_rmse_min']:.2f} vs persistence",
+                       delta_color="inverse")
+            mc3.metric("Improvement", f"{ov['improvement_pct']:.1f}%",
+                       "TTM beats baseline")
+
+            per_stn_df = pd.DataFrame(metrics["per_station"]).rename(
+                columns={
+                    "idx": "Station #",
+                    "station_name": "Station",
+                    "ttm_mae": "TTM MAE (min)",
+                    "baseline_mae": "Persistence MAE (min)",
+                    "improvement_pct": "Δ vs baseline (%)",
+                }
+            ).round(2)
+            st.markdown("**Per-station MAE**")
+            st.dataframe(per_stn_df, use_container_width=True, hide_index=True)
+
 
 def _render_live() -> None:
     st.markdown("#### Live ETA refinement")
@@ -89,6 +120,19 @@ def _render_live() -> None:
         "Quantile gradient-boosted regression. Given the train's currently-observed station + delay, "
         "predicts the delay at every remaining station with a 90% band."
     )
+
+    available = live_eta.available_models()
+    label_map = {"gbr": "sklearn GBR (default)", "lgbm": "LightGBM (Optuna-tuned)"}
+    if len(available) > 1:
+        choice = st.radio(
+            "Model",
+            options=available,
+            format_func=lambda k: label_map.get(k, k),
+            horizontal=True,
+            index=available.index("lgbm") if "lgbm" in available else 0,
+        )
+    else:
+        choice = available[0] if available else "gbr"
 
     stations = pretrip.stations()
     n = len(stations)
@@ -138,31 +182,84 @@ def _render_live() -> None:
                 key="live_cur_delay",
             )
 
-    if cur_idx is None or cur_idx >= n - 1:
+    terminal = cur_idx is None or cur_idx >= n - 1
+    if terminal:
         st.success("Train has reached the terminal station.")
-        return
+    else:
+        try:
+            preds = live_eta.predict_remaining(
+                cur_idx=cur_idx,
+                cur_delay=float(cur_delay or 0),
+                n_stations=n,
+                today=date.today(),
+                model_type=choice,
+            )
+        except FileNotFoundError:
+            st.error("Run `python3 -m ml.train` first to build the live ETA model.")
+            return
 
-    try:
-        preds = live_eta.predict_remaining(
-            cur_idx=cur_idx,
-            cur_delay=float(cur_delay or 0),
-            n_stations=n,
-            today=date.today(),
-        )
-    except FileNotFoundError:
-        st.error("Run `python3 -m ml.train` first to build the live ETA model.")
-        return
+        rows = [
+            {
+                "Station": stations[p.target_idx],
+                "Pred. Delay (min)": round(p.p50, 1),
+                "Lower (5%)": round(p.p05, 1),
+                "Upper (95%)": round(p.p95, 1),
+            }
+            for p in preds
+        ]
+        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
-    rows = [
-        {
-            "Station": stations[p.target_idx],
-            "Pred. Delay (min)": round(p.p50, 1),
-            "Lower (5%)": round(p.p05, 1),
-            "Upper (95%)": round(p.p95, 1),
-        }
-        for p in preds
-    ]
-    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+    comp = live_eta.load_comparison()
+    if comp:
+        with st.expander("Model comparison — time-based holdout (last 60 days)"):
+            live = comp.get("live_eta_task", comp)
+            rows = []
+            for key, label in [
+                ("persistence", "Persistence baseline"),
+                ("sklearn_gbr", "sklearn GBR (time-split)"),
+                ("lightgbm_tuned", "LightGBM raw (Optuna)"),
+                ("lightgbm_conformal", "LightGBM + conformal calibration"),
+            ]:
+                m = live.get(key, {})
+                if not m:
+                    continue
+                rows.append({
+                    "Model": label,
+                    "q50 MAE (min)": round(m.get("q50_mae", float("nan")), 3),
+                    "90% CI coverage": (f"{m['ci_coverage_90']*100:.1f}%"
+                                          if "ci_coverage_90" in m else "—"),
+                    "CI width (min)": (round(m["ci_width_min"], 1)
+                                          if "ci_width_min" in m else "—"),
+                })
+            st.markdown("**Live ETA refinement task** (predict tgt-station delay given cur-station delay)")
+            st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+            st.caption(
+                f"Split: time-based, last {comp.get('val_days','?')} days held out "
+                f"(cutoff {comp.get('cutoff_date','?')}, {comp.get('val_rows_live','?')} rows). "
+                f"LightGBM raw under-covers 90% target; conformal calibration "
+                f"(δ={live.get('lightgbm_conformal',{}).get('conformal_delta_min',0):.1f} min) "
+                f"restores coverage."
+            )
+
+            pretrip_data = comp.get("pretrip_task", {})
+            if pretrip_data:
+                st.markdown("**Pre-trip task** (predict next-day delay at any station)")
+                pre_rows = [
+                    {"Model": "IBM TTM zero-shot",
+                      "Per-station MAE (min)": round(pretrip_data.get("ttm_zero_shot_mae", 0), 3)},
+                    {"Model": "LightGBM (date features only)",
+                      "Per-station MAE (min)": round(pretrip_data.get("lgbm_pretrip_mae", 0), 3)},
+                ]
+                st.dataframe(pd.DataFrame(pre_rows), use_container_width=True, hide_index=True)
+                st.caption(
+                    f"TTM and LightGBM are tied on this task. TTM wins on "
+                    f"{sum(1 for s in pretrip_data['per_station_mae'] if s['better']=='TTM')}/45 stations, "
+                    f"LightGBM wins on "
+                    f"{sum(1 for s in pretrip_data['per_station_mae'] if s['better']=='LGBM')}/45."
+                )
+
+            with st.popover("LightGBM best hyperparameters"):
+                st.json(live["lightgbm_tuned"]["best_params"])
 
 
 def render_ml_tab() -> None:
