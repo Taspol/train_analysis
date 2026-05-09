@@ -5,9 +5,9 @@ import time
 import os
 
 def scrape_train_data():
-    input_file = '/Users/Taspol/Documents/sideProject/train_scrape/new/date_runhash_map.csv'
-    output_file = '/Users/Taspol/Documents/sideProject/train_scrape/new/station_delays.csv'
-    bearer_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjE4NC4yMi4zNC4yIiwidWEiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xNV83KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ3LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJyb2xlIjoidmlld2VyIiwiaWF0IjoxNzc4MjUzNzkwLCJleHAiOjE3NzgyNTczOTB9.6NGFkGEx0JT-M_yRwW1Z063_C9tUcWzLKZKhjhX8bwY'
+    input_file = '/Users/Taspol/Documents/sideProject/train_scrape/new/date_runhash_map_line31.csv'
+    output_file = '/Users/Taspol/Documents/sideProject/train_scrape/new/station_delays_line31.csv'
+    bearer_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjE4NC4yMi4zNC4yIiwidWEiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xNV83KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ4LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJyb2xlIjoidmlld2VyIiwiaWF0IjoxNzc4MzQ0NjEyLCJleHAiOjE3NzgzNDQ5NzJ9.WEPQb3HZSiHOPw16DfEFDAjEOw3IMgkOK1s3Cy0Ay_A'
     
     headers = {
         'Authorization': f'Bearer {bearer_token}',

@@ -116,17 +116,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 @st.cache_data
-def load_data():
-    file_path = 'station_delays.csv'
-    try:
-        df = pd.read_csv(file_path)
-        df['date'] = pd.to_datetime(df['date'])
-        df['arr_delay'] = pd.to_numeric(df['arr_delay'], errors='coerce').fillna(0)
-        df['dep_delay'] = pd.to_numeric(df['dep_delay'], errors='coerce').fillna(0)
-        return df
-    except Exception as e:
-        st.error(f"Error loading data: {e}")
+def load_data(selected_files):
+    if not selected_files:
         return None
+        
+    all_dfs = []
+    import re
+    for label, file_name in selected_files.items():
+        file_path = f'/Users/Taspol/Documents/sideProject/train_scrape/new/{file_name}'
+        try:
+            df = pd.read_csv(file_path)
+            df['date'] = pd.to_datetime(df['date'])
+            df['arr_delay'] = pd.to_numeric(df['arr_delay'], errors='coerce').fillna(0)
+            df['dep_delay'] = pd.to_numeric(df['dep_delay'], errors='coerce').fillna(0)
+            
+            # Extract digits from the label (e.g. "31" from "Train No. 31")
+            line_match = re.search(r'\d+', label)
+            line_num = line_match.group(0) if line_match else label
+            df['line'] = f"No. {line_num}"
+            all_dfs.append(df)
+        except Exception as e:
+            st.error(f"Error loading {file_name}: {e}")
+            
+    if not all_dfs:
+        return None
+    return pd.concat(all_dfs, ignore_index=True)
 
 def custom_metric(label, value, status="info"):
     st.markdown(f"""
@@ -137,21 +151,35 @@ def custom_metric(label, value, status="info"):
     """, unsafe_allow_html=True)
 
 def main():
+    # Sidebar styling
+    st.sidebar.markdown("## Configuration")
+    
+    # Train Line Selection
+    available_lines = {
+        "Train No. 31 (Special Express)": "station_delays_line31.csv",
+        "Train No. 169 (Rapid)": "station_delays_line169.csv"
+    }
+    selected_labels = st.sidebar.multiselect(
+        "Select Train Lines to Compare",
+        options=list(available_lines.keys()),
+        default=list(available_lines.keys())
+    )
+    
+    selected_files = {label: available_lines[label] for label in selected_labels}
+    df = load_data(selected_files)
+
     # Hero Section
-    st.markdown("""
+    line_display = " & ".join([label.split(" ")[-1].strip("()") for label in selected_labels]) if selected_labels else "Railway"
+    st.markdown(f"""
         <div class="hero-container">
-            <div class="hero-title">169Railway Analytics</div>
+            <div class="hero-title">{line_display} Analytics Comparison</div>
             <p style="color: #64748b; font-size: 1.1rem; font-weight: 300;">Journey reliability intelligence for Thai Railways</p>
         </div>
     """, unsafe_allow_html=True)
 
-    df = load_data()
     if df is None:
-        st.warning("Data source not found. Please ensure 'station_delays.csv' is generated.")
+        st.warning("Please select at least one train line to begin analysis.")
         return
-
-    # Sidebar styling
-    st.sidebar.markdown("## Configuration")
     
     all_stations = sorted(df['station_name'].unique())
     default_stations = ["ชุมทางทุ่งสง"]
@@ -206,20 +234,24 @@ def main():
     filtered_df = df[mask]
 
     # --- Metrics Section ---
-    m1, m2, m3, m4 = st.columns(4)
-    
-    max_delay = filtered_df['arr_delay'].max()
-    avg_delay = filtered_df['arr_delay'].mean()
-    major_delays_count = (filtered_df['arr_delay'] > 60).sum()
-    
-    # Calculate 90% Confidence Interval (Percentile based for better practical use)
-    ci_lower = filtered_df['arr_delay'].quantile(0.05)
-    ci_upper = filtered_df['arr_delay'].quantile(0.95)
+    for line in df['line'].unique():
+        line_df = filtered_df[filtered_df['line'] == line]
+        if line_df.empty: continue
+        
+        st.markdown(f"#### Train No. {line} Performance")
+        m1, m2, m3, m4 = st.columns(4)
+        
+        max_delay = line_df['arr_delay'].max()
+        avg_delay = line_df['arr_delay'].mean()
+        major_delays_count = (line_df['arr_delay'] > 60).sum()
+        
+        ci_lower = line_df['arr_delay'].quantile(0.05)
+        ci_upper = line_df['arr_delay'].quantile(0.95)
 
-    with m1: custom_metric("Worst Lateness", f"{max_delay:.0f}m")
-    with m2: custom_metric("CI 90% Range", f"{ci_lower:.0f}m - {ci_upper:.0f}m")
-    with m3: custom_metric("Average Delay", f"{avg_delay:.1f}m")
-    with m4: custom_metric("Major Delays (>1h)", f"{major_delays_count}")
+        with m1: custom_metric("Worst Lateness", f"{max_delay:.0f}m")
+        with m2: custom_metric("CI 90% Range", f"{ci_lower:.0f}m - {ci_upper:.0f}m")
+        with m3: custom_metric("Average Delay", f"{avg_delay:.1f}m")
+        with m4: custom_metric("Major Delays (>1h)", f"{major_delays_count}")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -239,22 +271,24 @@ def main():
         st.markdown("### Historical performance trends over time")
         plot_df = filtered_df.copy().set_index('date')
         resampled_data = []
-        for station in selected_stations:
-            station_data = plot_df[plot_df['station_name'] == station]['arr_delay'].resample(freq_code).mean().reset_index()
-            station_data['station_name'] = station
-            resampled_data.append(station_data)
+        for (station, line), group in plot_df.groupby(['station_name', 'line']):
+            station_line_data = group['arr_delay'].resample(freq_code).mean().reset_index()
+            station_line_data['station_name'] = station
+            station_line_data['line'] = line
+            station_line_data['display_name'] = f"{line} - {station}"
+            resampled_data.append(station_line_data)
         
-        final_plot_df = pd.concat(resampled_data)
-
-        fig_line = px.line(
-            final_plot_df, 
-            x='date', 
-            y='arr_delay', 
-            color='station_name',
-            labels={'arr_delay': 'Average Delay (minutes)', 'date': 'Timeline'},
-            template="plotly_white",
-            color_discrete_sequence=["#3b82f6", "#8b5cf6", "#f43f5e", "#10b981", "#f59e0b"]
-        )
+        if resampled_data:
+            final_plot_df = pd.concat(resampled_data)
+            fig_line = px.line(
+                final_plot_df, 
+                x='date', 
+                y='arr_delay', 
+                color='display_name',
+                labels={'arr_delay': 'Average Delay (min)', 'date': 'Timeline', 'display_name': 'Train Line & Station'},
+                template="plotly_white",
+                color_discrete_sequence=px.colors.qualitative.Safe
+            )
         fig_line.update_layout(
             paper_bgcolor='rgba(0,0,0,0)',
             plot_bgcolor='rgba(0,0,0,0)',
@@ -268,50 +302,35 @@ def main():
         st.plotly_chart(fig_line, use_container_width=True)
 
         st.markdown("---")
-        st.markdown("### Day-of-week breakdown")
-        dow_df = dow_stats.compute_dow_stats(filtered_df, on_time_threshold=delay_threshold)
-
-        if dow_df["count"].fillna(0).sum() == 0:
+        st.markdown("### Day-of-week breakdown comparison")
+        
+        all_dow_stats = []
+        for line in df['line'].unique():
+            line_df = filtered_df[filtered_df['line'] == line]
+            if line_df.empty: continue
+            stats = dow_stats.compute_dow_stats(line_df, on_time_threshold=delay_threshold)
+            stats['line'] = line
+            all_dow_stats.append(stats.reset_index())
+        
+        if not all_dow_stats:
             st.info("No rows match the current filters — adjust stations or date range.")
         else:
-            worst = dow_stats.worst_dow(dow_df, metric="median")
-            best = dow_stats.best_dow(dow_df, metric="median")
-            ranked = dow_df["median"].dropna().sort_values(ascending=False)
-
-            wc1, wc2, wc3 = st.columns(3)
-            wc1.metric(
-                "Worst day (highest median delay)",
-                worst or "—",
-                f"{dow_df.loc[worst,'median']:.1f} min" if worst else "—",
-            )
-            wc2.metric(
-                "Best day (lowest median delay)",
-                best or "—",
-                f"{dow_df.loc[best,'median']:.1f} min" if best else "—",
-            )
-            wc3.metric(
-                f"Best on-time rate (≤{delay_threshold}m)",
-                dow_df["on_time_pct"].idxmax() if dow_df["on_time_pct"].notna().any() else "—",
-                f"{dow_df['on_time_pct'].max():.1f}%" if dow_df["on_time_pct"].notna().any() else "—",
-            )
-
-            quant_long = (
-                dow_df[["mean", "median", "on_time_pct"]]
-                .reset_index()
-                .melt(id_vars="day_of_week", var_name="metric", value_name="value")
-            )
-            fig_dow_bar = px.bar(
-                quant_long[quant_long["metric"].isin(["mean", "median"])],
+            combined_dow = pd.concat(all_dow_stats)
+            
+            # Bar Chart Comparison - Median
+            st.markdown("#### Median Delay Comparison")
+            fig_dow_median = px.bar(
+                combined_dow,
                 x="day_of_week",
-                y="value",
-                color="metric",
+                y="median",
+                color="line",
                 barmode="group",
                 category_orders={"day_of_week": dow_stats.DOW_ORDER},
-                labels={"value": "Delay (minutes)", "day_of_week": "Day of week"},
+                labels={"median": "Median Delay (min)", "day_of_week": "Day of week", "line": "Train Line"},
                 template="plotly_white",
-                color_discrete_sequence=["#3b82f6", "#8b5cf6"],
+                color_discrete_sequence=["#3b82f6", "#f43f5e"]
             )
-            fig_dow_bar.update_layout(
+            fig_dow_median.update_layout(
                 paper_bgcolor="rgba(0,0,0,0)",
                 plot_bgcolor="rgba(0,0,0,0)",
                 font_family="Outfit",
@@ -320,46 +339,58 @@ def main():
                 yaxis=dict(showgrid=True, gridcolor="#e2e8f0"),
                 legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
             )
-            st.plotly_chart(fig_dow_bar, use_container_width=True)
+            st.plotly_chart(fig_dow_median, use_container_width=True)
 
-            quant_df = dow_df[["p05", "p50", "p95"]].dropna().reset_index()
-            quant_long2 = quant_df.melt(
-                id_vars="day_of_week", var_name="quantile", value_name="value"
-            )
-            fig_quant = px.line(
-                quant_long2,
+            # Bar Chart Comparison - Mean
+            st.markdown("#### Mean Delay Comparison")
+            fig_dow_mean = px.bar(
+                combined_dow,
                 x="day_of_week",
-                y="value",
-                color="quantile",
-                markers=True,
-                category_orders={
-                    "day_of_week": dow_stats.DOW_ORDER,
-                    "quantile": ["p05", "p50", "p95"],
-                },
-                labels={"value": "Delay (minutes)", "day_of_week": "Day of week"},
+                y="mean",
+                color="line",
+                barmode="group",
+                category_orders={"day_of_week": dow_stats.DOW_ORDER},
+                labels={"mean": "Mean Delay (min)", "day_of_week": "Day of week", "line": "Train Line"},
                 template="plotly_white",
-                color_discrete_sequence=["#10b981", "#3b82f6", "#f43f5e"],
+                color_discrete_sequence=["#3b82f6", "#f43f5e"]
+            )
+            fig_dow_mean.update_layout(
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                font_family="Outfit",
+                margin=dict(l=0, r=0, t=20, b=0),
+                xaxis=dict(showgrid=False, title=""),
+                yaxis=dict(showgrid=True, gridcolor="#e2e8f0"),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            )
+            st.plotly_chart(fig_dow_mean, use_container_width=True)
+
+            # Quantile comparison
+            fig_quant = px.line(
+                combined_dow,
+                x="day_of_week",
+                y="p95",
+                color="line",
+                markers=True,
+                category_orders={"day_of_week": dow_stats.DOW_ORDER},
+                labels={"p95": "95th Percentile Delay (min)", "day_of_week": "Day of week"},
+                title="Extreme Delay Risk (95th Percentile) by Day",
+                template="plotly_white",
+                color_discrete_sequence=["#3b82f6", "#f43f5e"]
             )
             fig_quant.update_layout(
                 paper_bgcolor="rgba(0,0,0,0)",
                 plot_bgcolor="rgba(0,0,0,0)",
                 font_family="Outfit",
-                margin=dict(l=0, r=0, t=20, b=0),
+                margin=dict(l=0, r=0, t=40, b=0),
                 xaxis=dict(showgrid=False, title=""),
                 yaxis=dict(showgrid=True, gridcolor="#e2e8f0"),
                 legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
             )
             st.plotly_chart(fig_quant, use_container_width=True)
 
-            with st.expander("Worst-day ranking (sorted by median delay)"):
-                rank_df = ranked.reset_index().rename(
-                    columns={"day_of_week": "Day of week", "median": "Median delay (min)"}
-                )
-                rank_df.insert(0, "Rank", range(1, len(rank_df) + 1))
-                st.dataframe(rank_df, use_container_width=True, hide_index=True)
-
-            with st.expander("Full DOW statistics table"):
-                st.dataframe(dow_df.round(2), use_container_width=True)
+            with st.expander("Detailed Day-of-Week Comparison Table"):
+                st.dataframe(combined_dow.round(2), use_container_width=True, hide_index=True)
 
     with tab_dist:
         st.markdown("### Lateness Distribution & Risk Profile")
@@ -369,12 +400,13 @@ def main():
             fig_hist = px.histogram(
                 filtered_df,
                 x="arr_delay",
-                color="station_name",
+                color="line",
                 marginal="box",
                 nbins=40,
                 template="plotly_white",
                 barmode="overlay",
-                color_discrete_sequence=["#3b82f6", "#8b5cf6"]
+                labels={'arr_delay': 'Delay (min)', 'line': 'Train Line'},
+                color_discrete_sequence=["#3b82f6", "#f43f5e"]
             )
             fig_hist.update_layout(
                 paper_bgcolor='rgba(0,0,0,0)',
