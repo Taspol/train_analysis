@@ -129,7 +129,7 @@ def _render_live() -> None:
             options=available,
             format_func=lambda k: label_map.get(k, k),
             horizontal=True,
-            index=available.index("lgbm") if "lgbm" in available else 0,
+            index=available.index("gbr") if "gbr" in available else 0,
         )
     else:
         choice = available[0] if available else "gbr"
