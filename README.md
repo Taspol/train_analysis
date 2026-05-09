@@ -8,15 +8,16 @@ This tool allows users to:
 1.  **Scrape**: Extract historical tracking data from the official Thai Railway TTS API.
 2.  **Analyze**: Process lateness patterns across hundreds of historical trips.
 3.  **Visualize**: Interact with a modern dashboard to evaluate travel risks and identify common causes of delays.
+4.  **Live Status**: Pull real-time tracking for train 169 directly from `ttsview.railway.co.th` and watch its current delay update every 30 seconds.
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Prerequisites
-Ensure you have Python 3.8+ installed. You will also need the following libraries:
+Ensure you have Python 3.8+ installed. Install dependencies via `requirements.txt`:
 ```bash
-pip install pandas plotly streamlit requests
+pip install -r requirements.txt
 ```
 
 ### 2. Data Collection (Scraping)
@@ -56,11 +57,24 @@ The interactive dashboard is built with Streamlit and provides a premium light-t
 -   **Root Cause Analysis**: A breakdown of official reasons for delays (e.g., track clearance, construction).
 -   **Major Incidents (>1h)**: A dedicated deep-dive table for critical timing failures, showing exactly what went wrong and when.
 
+### 🛰️ Live Status (Train 169)
+-   Connects to the SRT WebSocket at `wss://ttsview.railway.co.th:5000` and emits `viewSubTrain` with today's runhash to receive every station's live status.
+-   Renders the current station, latest delay, and per-station ETAs (actual → estimated → schedule + delay propagation).
+-   Auto-refreshes every 30 seconds while the tab is open.
+
+#### Provide today's runhash
+The WebSocket bypasses Cloudflare's Turnstile so no JWT or browser automation is required, but you do need to tell the app which runhash represents *today's* train 169:
+1.  Visit https://ttsview.railway.co.th/v3/ and open the train 169 row. The browser opens a `/v3/search/?qType=21&qParam=...` URL.
+2.  Paste either the full URL **or** just the `qParam` value into the runhash input on the **Live Status** tab.
+3.  The runhash is cached at `~/.cache/train_analysis/runhash_169.json` for the rest of the day. The next morning you'll be asked to provide the new one.
+
 ---
 
 ## 📁 File Structure
--   `scrape_delays.py`: Python script for automated data extraction.
+-   `scrape_delays.py`: Python script for automated historical data extraction.
 -   `analyze_delays.py`: Streamlit-based intelligence dashboard.
+-   `live_view.py`: Live Status tab (WebSocket fetch + auto-refresh + ETA rendering).
+-   `srt_socket.py`: Socket.IO client for `viewSubTrain` live tracking.
 -   `station_delays.csv`: The primary dataset (generated after scraping).
 -   `date_runhash_map.csv`: Mapping file required for API queries.
 -   `station_data.json`: Metadata for railway stations.

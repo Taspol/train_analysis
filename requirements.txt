@@ -2,3 +2,6 @@ streamlit
 pandas
 plotly
 requests
+python-socketio
+websocket-client
+streamlit-autorefresh
