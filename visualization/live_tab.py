@@ -11,7 +11,7 @@ from typing import Optional
 import pandas as pd
 import streamlit as st
 
-import srt_socket
+import extraction_pipeline.live_client as live_client
 
 TRAIN_NO = "169"
 REFRESH_INTERVAL_MS = 30_000
@@ -108,7 +108,7 @@ def _runhash_input_form() -> Optional[str]:
     if not raw:
         return None
 
-    candidate = srt_socket.parse_url_for_runhash(raw) or raw.strip()
+    candidate = live_client.parse_url_for_runhash(raw) or raw.strip()
     if len(candidate) < 16:
         st.error("That doesn't look like a runhash. Expected at least 16 characters.")
         return None
@@ -147,7 +147,7 @@ def render_live_tab() -> None:
             st.rerun()
 
     try:
-        stations = srt_socket.fetch_train_stations(runhash)
+        stations = live_client.fetch_train_stations(runhash)
     except Exception as e:
         st.error(f"Failed to fetch live data: {e}")
         return
