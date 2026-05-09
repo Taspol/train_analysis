@@ -57,6 +57,17 @@ The interactive dashboard is built with Streamlit and provides a premium light-t
 -   **Root Cause Analysis**: A breakdown of official reasons for delays (e.g., track clearance, construction).
 -   **Major Incidents (>1h)**: A dedicated deep-dive table for critical timing failures, showing exactly what went wrong and when.
 
+### 🤖 ML Forecast (Train 169)
+Two complementary models, both producing point estimates with a 90% confidence band:
+-   **Pre-trip ETA forecast** — IBM Tiny Time Mixer (`granite-timeseries-ttm-r2`) zero-shot forecast on the daily 45-channel delay matrix. CI is derived from walk-forward validation residuals.
+-   **Live ETA refinement** — quantile gradient-boosted regression. Given the train's currently-observed station + delay, predicts each remaining station's delay with a low/median/high quantile band.
+
+#### Build the artifacts (once, after refreshing `station_delays.csv`)
+```bash
+python3 -m ml.train
+```
+This generates `data/delay_matrix.parquet`, `data/ttm_residuals.npy`, and `data/live_eta_model.pkl`. The Streamlit ML tab lazily loads these on first use.
+
 ### 🛰️ Live Status (Train 169)
 -   Connects to the SRT WebSocket at `wss://ttsview.railway.co.th:5000` and emits `viewSubTrain` with today's runhash to receive every station's live status.
 -   Renders the current station, latest delay, and per-station ETAs (actual → estimated → schedule + delay propagation).

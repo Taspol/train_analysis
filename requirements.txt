@@ -5,3 +5,8 @@ requests
 python-socketio
 websocket-client
 streamlit-autorefresh
+scikit-learn
+joblib
+torch
+granite-tsfm
+pyarrow

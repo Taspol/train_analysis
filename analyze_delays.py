@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 
 import live_view
+import ml_view
 
 # Page configuration
 st.set_page_config(
@@ -224,8 +225,9 @@ def main():
 
 
     # --- Main Analysis Area ---
-    tab_live, tab_trends, tab_dist, tab_causes = st.tabs([
+    tab_live, tab_ml, tab_trends, tab_dist, tab_causes = st.tabs([
         "Live Status",
+        "ML Forecast",
         "Performance Trends",
         "Delay Distribution",
         "Reason Logs"
@@ -233,6 +235,8 @@ def main():
 
     with tab_live:
         live_view.render_live_tab()
+    with tab_ml:
+        ml_view.render_ml_tab()
 
     with tab_trends:
         st.markdown("### Historical performance trends over time")
